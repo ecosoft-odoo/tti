@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_order_form_ext" model="ir.ui.view">
+            <field name="name">view.order.form.ext</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <data>								 
+					<xpath expr="/form/sheet/notebook" position="before">
+                        <group>
+                            <field name="overwrite_uom" />
+                        </group>
+					</xpath>
+					<xpath expr="/form/sheet/notebook/page[@string='Order Lines']" position="after">
+						<page string="Overwrite UoM" attrs="{'invisible': [('overwrite_uom', '!=', True)]}">
+                            <field name="order_line_uom">
+                                <tree string="Sales Order Lines" create="0" editable="bottom">
+                                	<field name="product_id" readonly="1"/>
+                                	<field name="name" readonly="1"/>
+                                	<field name="disp_product_uom_qty" attrs="{'required': [('disp_uom', '!=', False)]}"/>
+                                	<field name="disp_uom"/>
+                                	<field name="disp_price_unit" attrs="{'required': [('disp_uom', '!=', False)]}"/>
+                                </tree>
+                            </field>
+                        </page>
+					</xpath>
+            	</data>
+			</field>
+        </record>
+	</data>
+</openerp>

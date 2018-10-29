@@ -1,0 +1,3 @@
+id,name,code,iso_code,grouping,thousands_sep,decimal_point,time_format,date_format,decimal_point,direction,translatable
+base.lang_en,English,en_US,,"[3,3,3,3,3,3,3]",",",.,%H:%M:%S,%d/%m/%Y,".",Left-to-Right,True
+base.lang_th,Thai / ภาษาไทย,th_TH,th,"[3,3,3,3,3,3,3]",",",.,%H:%M:%S,%d/%m/%Y,".",Left-to-Right,True

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="purchase_order_form_ext" model="ir.ui.view">
+            <field name="name">purchase.order.form.ext</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <data>	
+					<xpath expr="/form/sheet//field[@name='name']" position="replace">
+                        <field name="name" class="oe_inline" attrs="{'readonly': [('past_doc', '!=', True)]}"/>
+					</xpath>
+					<xpath expr="/form/sheet//field[@name='name']" position="after">
+						<div class="oe_right">
+	                        <field name="past_doc" on_change="onchange_past_doc(past_doc)" />
+	                        <label string="Past" />
+						</div>                        
+					</xpath>           	
+				</data>
+			</field>
+        </record>
+        
+	</data>
+</openerp>

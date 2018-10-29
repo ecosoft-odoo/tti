@@ -1,0 +1,2 @@
+"id","active","perm_create","perm_unlink","perm_read","perm_write","domain_force","groups/id","name","model_id/id"
+"__export__.ir_rule_77","True","True","True","True","True","['|',('create_uid','=',user.id),'|',('create_uid','=',False),'|',('user_id','=',user.id),('user_id','=',False)]","base.group_sale_salesman,sale_prequotation.group_calculation_sheet_user,sale_prequotation.group_sale_engineer","Sale Reponse","sale_prequotation.model_sale_prequotation"

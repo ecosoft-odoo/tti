@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_calcsheet_quotation_ext" model="ir.ui.view">
+            <field name="name">view.calcsheet.quotation.ext</field>
+            <field name="model">calcsheet.quotation</field>
+            <field name="inherit_id" ref="sale_prequotation.view_calcsheet_quotation"/>
+            <field name="arch" type="xml">
+                <data>
+					<xpath expr="/form/group" position="inside">
+						<group>
+							<field name="past_doc" invisible="not context.get('past_doc', False)"/>
+							<field name="past_doc_number" attrs="{'required': [('past_doc', '=', True)]}" invisible="not context.get('past_doc', False)"/>
+						</group>
+					</xpath>
+					<xpath expr="/form/footer/button[@name='create_quotation']" position="attributes">
+						<attribute name="context">{'past_doc': past_doc, 'past_doc_number': past_doc_number,}</attribute>
+					</xpath>
+				</data>
+			</field>
+        </record>
+	</data>
+</openerp>

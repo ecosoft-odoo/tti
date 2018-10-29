@@ -1,0 +1,7 @@
+"id","name","default_code","brand","model","desciption","categ_id","sale_ok","purchase_ok","type","procure_method","supply_method","cost_method","uom_id","uom_po_id","valuation","standard_price","list_price","taxes_id","supplier_taxes_id"
+"Product_00001","Portable Ambient Oxygen Monitors",,"AII","AII-3000 A","Analysis Ranges: 0-100% oxygen 
+Area Classification: General purpose
+Connections: 1x16 mm thread
+Power: 2 AA Alkaline batteries
+Signal Output: None
+Sensor Model: AII-11-60","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Real Time (automated)",0,0,"Output VAT","Input VAT"

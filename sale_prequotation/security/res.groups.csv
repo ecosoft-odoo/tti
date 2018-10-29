@@ -1,0 +1,5 @@
+"id","name"
+"sale_prequotation.group_calculation_sheet_user","User"
+"sale_prequotation.group_calculation_sheet_owner","Owner"
+"sale_prequotation.group_calculation_sheet_manager","Manager"
+"sale_prequotation.group_calculation_sheet_engineer","Engineer"

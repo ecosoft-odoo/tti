@@ -1,0 +1,726 @@
+"id","name","default_code","brand","model","description","categ_id","sale_ok","purchase_ok","type","procure_method","supply_method","cost_method","uom_id","uom_po_id","valuation","standard_price","list_price","taxes_id","supplier_taxes_id"
+"Product_00001","Portable Ambient Oxygen Monitors",,"AII","AII-3000 A","Analysis Ranges: 0-100% oxygen 
+Area Classification: General purpose
+Connections: 1x16 mm thread
+Power: 2 AA Alkaline batteries
+Signal Output: None
+Sensor Model: AII-11-60","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00002","Portable Ambient Oxygen Monitors",,"AII","AII-3000 AHC","Analysis Ranges: 0-100% oxygen 
+Area Classification: General purpose
+Connections:Tubing 1/4” 
+Power: 2 AA Alkaline batteries
+Signal Output: None
+Sensor Model: AII-11-60-HC","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00003","Portable Ambient Oxygen Monitors",,"AII","AII-3000 M","Analysis Ranges: 0-100% oxygen 
+Area Classification: General purpose
+Connections: 1x16 mm thread
+Power: 2 AA Alkaline batteries
+Signal Output: None
+Sensor Model: AII-11-60","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00004","Portable PPM Oxygen Analyzer",,"AII","GPR-1000","Analysis Ranges: 0-1000 PPM, 0-1%, 0-25% (CAL) FS Auto-ranging or manual lock on a single range
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output: 0-1V FS
+Sensor Model: GPR-12-100-M for non-acid (CO2) gas streams 
+                           XLT-12-100-M for gas mixture with > 0.5% CO2   ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00005","Portable PPM Oxygen Analyzer",,"AII","GPR-1000 ATEX","Analysis Ranges: 0-1000 PPM, 0-1%, 0-25% (CAL) FS Auto-ranging or manual lock on a single range
+Area Classification: Class I, Division 1, Groups C, D 
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output: 0-1V FS
+Sensor Model: GPR-12-100-M for non-acid (CO2) gas streams 
+                           XLT-12-100-M for gas mixture with > 0.5% CO2   ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00006","Portable PPM Oxygen Analyzer",,"AII","GPR-1100","Analysis Ranges: 0-10, 0-100, 0-1000 PPM, 0-1%, 0-25% (CAL) FS Auto-ranging or manual lock on a single range 
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output: 0-1V FS
+Sensor Model: GPR-12-333 for non-acid (CO2) gas streams 
+                           XLT-12-333 for gas mixture with > 0.5% CO2 ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00007","Portable PPM Oxygen Analyzer",,"AII","GPR-1100 ATEX","Analysis Ranges:  0-10, 0-100, 0-1000 PPM, 0-1%, 0-25% (CAL) FS Auto-ranging or manual lock on a single range
+Area Classification: Class I, Division 1, Groups C, D 
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output: 0-1V FS
+Sensor Model: GPR-12-333 for non-acid (CO2) gas streams 
+                           XLT-12-333 for gas mixture with > 0.5% CO2 ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00008","Portable PPM Trace Oxygen Analyzer",,"AII","GPR-1200","Analysis Ranges: 0-10, 0-100, 0-1000 PPM, 0-1%, 0-25% (CAL) FS Auto-ranging or manual lock on a single range 
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output: 0-1V FS
+Sensor Model: GPR-12-333 for non-acid (CO2) gas streams 
+                           XLT-12-333 for gas mixture with > 0.5% CO2 ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00009","Portable PPM Oxygen Analyzer",,"AII","GPR-1200 ATEX","Analysis Ranges: 0-10, 0-100, 0-1000 PPM, 0-1%, 0-25% (CAL) FS Auto-ranging or manual lock on a single range 
+Area Classification: Class I, Division 1, Groups C, D 
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output: 0-1V FS
+Sensor Model: GPR-12-333 for non-acid (CO2) gas streams 
+                           XLT-12-333 for gas mixture with > 0.5% CO2 ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00010","Portable PPB Oxygen Analyzer",,"AII","GPR-1200 MS","Analysis Ranges: 0-1, 0-10, 0-100, 0-1000 PPM FS ranges; Auto-ranging or manual lock on a single range
+Area Classification: Class I, Division 1, Groups C, D
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output: 0-1V FS
+Sensor Model: GPR-12-2000MS   ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00011","Portable PPB Oxygen Analyzer",,"AII","GPR-1200 MS ATEX","Analysis Ranges: 0-1, 0-10, 0-100, 0-1000 PPM FS ranges; Auto-ranging or manual lock on a single range
+Area Classification: General purpose 
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output: 0-1V FS
+Sensor Model: GPR-12-2000MS   ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00012","PPM Oxygen Transmitter",,"AII","GPR-15 XP","Analysis Ranges: 0-100 ppm, 0-25% FS ranges
+Area Classification: Class 1, Division 1, Groups C, D hazardous areas 
+Connections: 1/8"" compression tube fittings
+Power: 12-28VDC two wire loop power 
+Signal Output: 4-20mA 
+Sensor Model: XLT-12-100-M
+                           GPR-12-100-M  ","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00013","PPM Oxygen Transmitter",,"AII","GPR-1500","Analysis Ranges: 0-10 PPM, 0-100 PPM, 0-1000 PPM, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range 
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC
+Signal Output: 4-20mA
+Sensor Model: GPR-12-333 for inert gases;
+XLT-12-333 for gases containing > 0.5% CO2  ","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00014","PPM Oxygen Transmitter",,"AII","GPR-1500 A","Analysis Ranges: 
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC
+Signal Output: 0-1V FS
+Sensor Model: GPR-12-2000MS   ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00015","PPM Oxygen Transmitter",,"AII","GPR-1500 ATEX","Analysis Ranges: 0-10 PPM, 0-100 PPM, 0-1000 PPM, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: Meets the recognized intrinsic safety standards for use in Class 1, Division 1, Group C, D hazardous
+Connections: 1/8"" compression tube fittings
+Power: 24 VDC
+Signal Output: 4-20mA
+Sensor Model: GPR-12-333 for inert gases; 
+                           XLT-12-333 for gases containing > 0.5% CO2 ","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00016","PPM OxygenTransmitter",,"AII","GPR-1500 D","Analysis Ranges: 0-10 PPM, 0-100 PPM, 0-1000 PPM, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: General purpose 
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC
+Signal Output: 4-20mA 
+Sensor Model: GPR-12-100-M for inert gases; 
+                           XLT-12-100-M for gases containing >0.5% CO2 ","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00017","PPM Oxygen Transmitter",,"AII","GPR-1500 D ATEX","Analysis Ranges: 0-100 PPM, 0-1000 PPM, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range 
+Area Classification: Meets the recognized intrinsic safety standards for use in Class 1, Division 1, Group C, D hazardous 
+Connections: 1/8"" compression tube fittings
+Power: 24 VDC 
+Signal Output: 4-20mA 
+Sensor Model: GPR-12-100-M for inert gases; 
+                           XLT-12-100-M for gases containing > 0.5% CO2","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00018","PPM Oxygen Analyzer",,"AII","GPR-1500 DA",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00019","PPM Oxygen Transmitter",,"AII","GPR-1500 DK",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00020","PPM Oxygen Transmitter",,"AII","GPR-1500 DN",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00021","PPM Oxygen Transmitter",,"AII","GPR-1500 DN ATEX",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00022","PPM Oxygen Transmitter",,"AII","GPR-1500 GB","Analysis Ranges: 0-10 PPM, 0-100 PPM, 0-1000 PPM, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC (2 wire loop power)
+Signal Output: 4-20mA
+Sensor Model: GPR-12-100-M for general use 
+                           XLT-12-100-M for gases containing > 0.5% CO2 ","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00023","PPM Oxygen Transmitter",,"AII","GPR-1500 N","Analysis Ranges: 0-10 PPM, 0-100 PPM, 0-1000 PPM, 0-1%, 0-25% (air calibration only) FS ranges; auto or fixed ranging
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC two wire loop power
+Signal Output: 4-20mA
+Sensor Model: GPR-12-333 for inert gases; 
+                           XLT-12-333 for gases containing > 0.5% CO2","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00024","PPM Oxygen Transmitter",,"AII","GPR-1500 N ATEX",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00025","PPB Oxygen Analyzer",,"AII","GPR-16 MS W306-F",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00026","PPM Oxygen Analyzer",,"AII","GPR-1600","Analysis Ranges: 0-10 ppm, 0-100, 0-1000, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: General purpose
+Connections: 1/4"" compression tube fittings
+Power: Universal; specify 110 or 220 VAC with optional heater
+Signal Output: 4-20mA isolated and 0-1V 
+Sensor Model: GPR-12-333
+                           XLT-12-333","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00027","PPB Oxygen Analyzer",,"AII","GPR-1600 MS","Analysis Ranges:0-1 ppm, 0-10, 0-100, 0-1000 ppm FS ranges standard;  auto-ranging or manually lock on single range
+Area Classification: General purpose
+Connections: 1/4"" compression tube fittings
+Power: Universal; specify 110 or 220 VAC for heater system
+Signal Output: 4-20mA isolated and 0-1V 
+Sensor Model: GPR-12-2000MS","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00028","PPB Oxygen Analyzer",,"AII","GPR-1600 MS T",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00029","PPB Oxygen Analyzer",,"AII","GPR-1600 MS TO",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00030","PPB Oxygen Analyzer",,"AII","GPR-1600 MS W","Analysis Ranges:0-1 ppm, 0-10, 0-100, 0-1000 ppm FS ranges standard;  auto-ranging or manually lock on single range
+Area Classification: General purpose
+Connections: 1/4"" compression tube fittings
+Power: Universal; specify 110 or 220 VAC for heater system
+Signal Output: 4-20mA isolated and 0-1V 
+Sensor Model: GPR-12-2000MS","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00031","PPB Oxygen Analyzer",,"AII","GPR-1600 MS W306","Analysis Ranges:0-1 ppm, 0-10, 0-100, 0-1000 ppm FS ranges standard;  auto-ranging or manually lock on single range
+Area Classification: General purpose
+Connections: 1/4"" compression tube fittings
+Power: Universal; specify 110 or 220 VAC for heater system
+Signal Output: 4-20mA isolated and 0-1V 
+Sensor Model: GPR-12-2000MS","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00032","PPM Oxygen Analyzer",,"AII","GPR-1600 MS WT",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00033","PPM Oxygen Analyzer",,"AII","GPR-1600 T",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00034","PPM Oxygen Analyzer",,"AII","GPR-1600 TO",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00035","PPB Oxygen Analyzer",,"AII","GPR-1600 UHP","Analysis Ranges: 0-100 ppb, 0-1 ppm, 0-10, 0-100 ppm FS ranges; auto-ranging or manually lock on single range 
+Area Classification: General purpose
+Connections: Sample and span inlets - 1/4"" VCR fittings; air inlet and vent - 1/4” compression tube fittings
+Power: Specify 100/120 or 220/240 VAC
+Signal Output: 4-20mA isolated and 0-1V 
+Sensor Model: GPR-13-2000UHP
+                           GPR-1600 UHP-B
+                           GPR-1600 UHP-M","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00036","PPB Oxygen Analyzer",,"AII","GPR-1600 UHP B",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00037","PPM Oxygen Analyzer",,"AII","GPR-1600 W",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00038","PPM Oxygen Analyzer",,"AII","GPR-1600 W-AV",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00039","PPM Oxygen Analyzer",,"AII","GPR-1600 W306",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00040","PPM Oxygen Analyzer",,"AII","GPR-18","Analysis Ranges: 0-10 ppm, 0-100, 0-1000 ppm, 0-1%, 0-25% 
+Area Classification: Enclosure Class 1, Division 1, Groups B, C, D NEMA4/7 
+Connections: 1/8"" compression tube fittings
+Power: Specify 100/120 or 220/240 VAC
+Signal Output: 4-20mA isolated and 0-1V 
+Sensor Model : GPR-12-333
+                            XLT-12-333","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00041","PPM Oxygen Analyzer",,"AII","GPR-18 ATEX","Analysis Ranges: 0-10 ppm, 0-100, 0-1000 ppm, 0-1%, 0-25% FS ranges 
+Area Classification: As above; meets standards for Class 1, Division 1, Groups B, C, D NEMA4/7 hazardous areas 
+Connections: 1/8"" compression tube fittings
+Power: Specify 100/120 or 220/240 VAC
+Signal Output: 4-20mA isolated and 0-1V 
+Sensor Model: GPR-12-333
+                           XLT-12-333","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00042","PPB Oxygen Analyzer",,"AII","GPR-18 MS","Analysis Ranges: 0-1 ppm, 0-10, 0-100, 0-1000 ppm FS ranges 
+Area Classification: Enclosure Class 1, Division 1, Groups B, C, D NEMA4/7 
+Connections: 1/8"" compression tube fittings
+Power: Specify 100/120 or 220/240 VAC
+Signal Output: 4-20mA isolated and 0-1V 
+Sensor Model :GPR-12-2000MS","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00043","PPB Oxygen Analyzer",,"AII","GPR-18 MS ATEX","Analysis Ranges: 0-1 ppm, 0-10, 0-100, 0-1000 ppm FS ranges 
+Area Classification: Enclosure Class 1, Division 1, Groups B, C, D NEMA4/7 
+Connections: 1/8"" compression tube fittings
+Power: Specify 100/120 or 220/240 VAC
+Signal Output: 4-20mA isolated and 0-1V 
+Sensor Model :GPR-12-2000MS","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00044","PPM Oxygen Analyzer",,"AII","GPR-1800 AIS ATEX","Analysis Ranges: 0-10 PPM, 0-100 PPM, 0-1000 PPM, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: Meets the recognized intrinsic safety standards for use in Class 1, Division 1, Group C, D hazardous 
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC (suitable for solar power systems) or 100/230 VAC 
+Signal Output: 4-20mA 
+Sensor Model :GPR-12-333
+                           XLT-12-333","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00045","PPM Oxygen Analyzer",,"AII","GPR-1800 AIS UL",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00046","PPM Oxygen Analyzer",,"AII","GPR-1800 AIS-LD ATEX",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00047","PPM Oxygen Analyzer",,"AII","GPR-1800 AIS-LD UL",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00048","PPM Oxygen Transmitter",,"AII","GPR-1800 IS ATEX","Analysis Ranges: 0-10 PPM, 0-100 PPM, 0-1000 PPM, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification:Meets the recognized intrinsic safety standards for use in Class 1, Division 1, Group C, D hazardous 
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC (suitable for solar powered systems)
+Signal Output: 4-20mA 
+Sensor Model :GPR-12-333
+                           XLT-12-333","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00049","PPM Oxygen Transmitter",,"AII","GPR-1800 IS UL",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00050","PPM Oxygen Transmitter",,"AII","GPR-1800 IS-LD ATEX",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00051","PPM Oxygen Transmitter",,"AII","GPR-1800 IS-LD UL",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00052","PPM Oxygen Analyzer",,"AII","GPR-1900","Analysis Ranges: 0-10 ppm, 0-100, 0-1000, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: Universal 100/120/220/250 VAC or 9-28 VDC
+Signal Output: 4-20mA isolated
+Sensor Model :GPR-12-333
+                           XLT-12-333","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00053","PPM Oxygen Analyzer",,"AII","GPR-1900 D","Analysis Ranges: 0-100 ppm, 0-1000 ppm, 0-1%, 0-25% FS ranges; auto-ranging or manually lock on single range 
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: Universal 100/120/220/250 VAC or 9-28 VDC
+Signal Output: 4-20mA isolated
+Sensor Model: GPR-12-100-4
+                           XLT-12-100-4","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00054","PPB Oxygen Analyzer",,"AII","GPR-1900 MS","Analysis Ranges: 0-1 ppm, 0-10, 0-100, 0-1000 ppm FS ranges; auto-ranging or manually lock on single range
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: Universal; specify 100/120/220/240 VAC
+Signal Output :4-20mA isolated and 0-1V 
+Sensor Model: GPR-12-2000MS ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00055","Portable Oxygen Analyzer",,"AII","GPR-2000","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% (CAL) FS Auto-ranging or manual lock on a single range
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output : 0-1V FS
+Sensor Model: GPR-11-32-RTS for non-acid (CO2) gas streams 
+                            XLT-11-24-RTS for gas mixture with > 0.5% CO2","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00056","Portable Oxygen Analyzer",,"AII","GPR-2000 ATEX","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% (CAL) FS Auto-ranging or manual lock on a single range
+Area Classification: Class I, Division 1, Groups C, D
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output : 0-1V FS
+Sensor Model: GPR-11-32-RTS for non-acid (CO2) gas streams 
+                            XLT-11-24-RTS for gas mixture with > 0.5% CO2","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00057","Oxygen Monitor",,"AII","GPR-2000 D",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00058","Portable Oxygen Analyzer",,"AII","GPR-2000 P",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00059","Portable Oxygen Analyzer",,"AII","GPR-2000 P ATEX",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00060","Oxygen Transmitter",,"AII","GPR-25 XP","Analysis Ranges: 0-5%, 0-25% FS ranges
+Area Classification: Class 1, Division 1, Groups C, D hazardous areas 
+Connections: 1/8"" compression tube fittings
+Power: 12-28VDC two wire loop power
+Signal Output : 4-20mA
+Sensor Model: XLT-11-24-RTS
+                           GPR-11-32-RTS","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00061","Oxygen Transmitter",,"AII","GPR-2500","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: General purpose 
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC
+Signal Output : 4-20mA
+Sensor Model: GPR-11-32-4 for inert gases; 
+                           XLT-11-24-4 for gases containing > 0.5% CO2 ","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00062","Oxygen Transmitter",,"AII","GPR-2500 A","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges; auto or fixed ranging
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings 
+Power: 12-24 VDC non-loop power
+Signal Output : 4-20mA
+Sensor Model: GPR-11-32-4 for inert gases; 
+                           XLT-11-24-4 for gases containing > 0.5% CO2","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00063","Oxygen Purity Analyzer",,"AII","GPR-2500 A MO","Analysis Ranges: 0-100% FS range; auto or fixed ranging 
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings 
+Power: 12-24 VDC non-loop power
+Signal Output : 4-20mA
+Sensor Model: GPR-11-120-4 ","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00064","Oxygen Transmitter",,"AII","GPR-2500 ATEX","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: Meets the recognized intrinsic safety standards for use in Class 1, Division 1, Group C, D hazardous
+Connections: 1/8"" compression tube fittings
+Power: 24 VDC
+Signal Output : 4-20mA
+Sensor Model: GPR-11-32-4 for inert gases; 
+                           XLT-11-24-4 for gases containing > 0.5% CO2 
+","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00065","Oxygen Transmitter",,"AII","GPR-2500 DK",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00066","Oxygen Transmitter",,"AII","GPR-2500 GB",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00067","Oxygen Transmitter",,"AII","GPR-2500 KAI",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00068","Oxygen Purity Transmitter",,"AII","GPR-2500 MO",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00069","Oxygen Purity Transmitter",,"AII","GPR-2500 MO N",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00070","Oxygen Transmitter",,"AII","GPR-2500 N",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00071","Oxygen Transmitter",,"AII","GPR-2500 N ATEX",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00072","Ambient Oxygen Monitor",,"AII","GPR-2500 S",,"Indicator & Controller","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00073","Ambient Oxygen Monitor",,"AII","GPR-2500 S ATEX",,"Indicator & Controller","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00074","Oxygen Transmitter",,"AII","GPR-2500 SB",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00075","Ambient Oxygen Monitor",,"AII","GPR-2500 SN",,"Indicator & Controller","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00076","Ambient Oxygen Monitor",,"AII","GPR-2500 SN ATEX",,"Indicator & Controller","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00077","Oxygen Analyzer",,"AII","GPR-2600","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: General purpose
+Connections: 1/4"" compression tube fittings
+Power: Universal; specify 110 or 220 VAC with optional heater 
+Signal Output : 4-20mA isolated and 0-1V
+Sensor Model: GPR-11-32-4
+                           XLT-11-24-4","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00078","Oxygen Analyzer",,"AII","GPR-2600 W",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00079","Oxygen Analyzer",,"AII","GPR-28","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges
+Area Classification: Enclosure Class 1, Division 1, Groups B, C, D NEMA4/7 (Meets UL standard for Class 1, Division 1, Group C, D)
+Connections: 1/4"" compression tube fittings
+Power: Universal; specify 110 or 220 VAC with optional heater 
+Signal Output : 4-20mA isolated and 0-1V
+Sensor Model: GPR-11-32-4
+                           XLT-11-24-4","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00080","Oxygen Analyzer",,"AII","GPR-28 ATEX","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges 
+Area Classification: Enclosure Class 1, Division 1, Groups B, C, D NEMA4/7 (ATEX explosion proof Ex d IIB+H2 T6, CE)
+Connections: 1/8"" compression tube fittings
+Power: Specify 100/120 or 220/240 VAC 
+Signal Output : 4-20mA isolated and 0-1V
+Sensor Model: GPR-11-32 
+                           XLT-11-24-4","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00081","Oxygen Analyzer",,"AII","GPR-2800 AIS ATEX","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges; auto-ranging or manually lock on single range 
+Area Classification: Meets the recognized intrinsic safety standards for use in Class 1, Division 1, Group C, D hazardous
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC (suitable for solar power systems) or 100/230 VAC  
+Signal Output : 4-20mA
+Sensor Model: GPR-11-32 
+                           XLT-11-24-4","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00082","Ambient Oxygen Analyzer",,"AII","GPR-2800 AIS S ATEX",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00083","Ambient Oxygen Analyzer",,"AII","GPR-2800 AIS S UL",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00084","Oxygen Analyzer",,"AII","GPR-2800 AIS UL",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00085","Oxygen Analyzer",,"AII","GPR-2800 AIS-LD ATEX",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00086","Oxygen Analyzer",,"AII","GPR-2800 AIS-LD UL",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00087","Oxygen Transmitter",,"AII","GPR-2800 IS ATEX","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges; auto-ranging or  manually lock on single range
+Area Classification: Meets the recognized intrinsic safety standards for use in Class 1, Division 1, Group C, D hazardous 
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC (suitable for solar powered systems) 
+Signal Output : 4-20mA isolated and 0-1V
+Sensor Model: GPR-11-32 
+                           XLT-11-24","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00088","Ambient Oxygen Transmitter",,"AII","GPR-2800 IS S ATEX",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00089","Ambient Oxygen Transmitter",,"AII","GPR-2800 IS S UL",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00090","Oxygen Transmitter",,"AII","GPR-2800 IS UL",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00091","Oxygen Transmitter",,"AII","GPR-2800 IS-LD ATEX",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00092","Oxygen Transmitter",,"AII","GPR-2800 IS-LD UL",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00093","Oxygen Analyzer",,"AII","GPR-2900","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges; auto-ranging or manually lock on single range 
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: Universal; specify 100/120/220/240 VAC or 9-28 VDC 
+Signal Output : 4-20mA
+Sensor Model: GPR-11-60-4
+                           XLT-11-24-4","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00094","Oxygen Analyzer",,"AII","GPR-2900 W","Analysis Ranges: 0-1%, 0-5%, 0-10%, 0-25% FS ranges; auto-ranging or manually lock on single range
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: Universal; specify 100/120/220/240 VAC or 9-28 VDC
+Signal Output : 4-20mA
+Sensor Model: GPR-11-60-4
+                           XLT-11-24-4
+Note: Wall Mount","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00095","PPM Oxygen Analyzer",,"AII","GPR-3000 T",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00096","Oxygen Purity Analyzer",,"AII","GPR-3100","Analysis Ranges: 0-100% full scale range; 50-100%, 80-100%, 90-100 suppressed ranges
+Area Classification: General purpose
+Connections: Compression tube fittings 1/8” inlet; 1/4” vent 
+Power: Specify 100/120 or 220/240 VAC 
+Signal Output : 4-20mA isolated and 0-1V 
+Sensor Model: GPR-11-120-OP","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00097","Oxygen Purity Analyzer",,"AII","GPR-3100 W",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00098","Ambient Oxygen Monitor",,"AII","GPR-35",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00099","Ambient Oxygen Monitor",,"AII","GPR-35 CSA",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00100","Oxygen Monitor",,"AII","GPR-35 PRX",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00101","Portable Oxygen Purity Analyzer",,"AII","GPR-3500 MO","Analysis Ranges: 0-100% FS range 
+Area Classification: General purpose
+Connections: 1/8"" compression tube fittings
+Power: 12-24 VDC two wire loop
+Signal Output : 4-20mA
+Sensor Model: GPR-11-120-RTS","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00102","Portable PPM H2S Analyzer",,"AII","GPR-7100","Analysis Ranges: 0-20, 0-50, 0-100 PPM FS ranges; Auto-ranging or manually lock on single range
+Area Classification: Meets intrinsic safety standards for use in Class 1, Division 1, Group C, D hazardous areas 
+Connections: 1/8"" compression tube fittings
+Power: Rechargeable battery
+Signal Output : 0-1V
+Sensor Model: OSV-72-B1","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00103","PPM H2S Analyzer",,"AII","GPR-7500 AIS ATEX","Analysis Ranges: 0-20, 0-50, 0-100 PPM FS ranges; auto-ranging or manually lock on single range
+Area Classification: Meets intrinsic safety standards for use in CSA/UL Class 1, Division 1, Group C, D hazardous areas
+Connections: 1/4"" compression tube fittings
+Power: 12-24 VDC or 100/230 VAC
+Signal Output : 4-20mA
+Sensor Model: GPR-72-B1 (standard ranges) 
+                           GPR-72-BE (optional ranges) ","Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00104","PPM H2S Analyzer",,"AII","GPR-7500 AIS UL",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00105","PPM H2S Analyzer",,"AII","GPR-7500 AIS-LD ATEX",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00106","PPM H2S Analyzer",,"AII","GPR-7500 AIS-LD UL",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00107","PPM H2S Transmitter",,"AII","GPR-7500 IS ATEX","Analysis Ranges: 0-20, 0-50, 0-100 PPM FS ranges; auto-ranging or manually lock on single range
+Area Classification: Meets intrinsic safety standards for use in CSA/UL Class 1, Division 1, Group C, D hazardous areas
+Connections: 1/4"" compression tube fittings
+Power: 12-24 VDC or 100/230 VAC
+Signal Output : 4-20mA
+Sensor Model: GPR-72-B1 (standard ranges) 
+                           GPR-72-BE (optional ranges) ","Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00108","PPM H2S Transmitter",,"AII","GPR-7500 IS UL",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00109","Oxygen Transmitter",,"AII","GPR-KF40",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00110","PPM Oxygen Transmitter",,"AII","GPR-KF40-12",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00111","PPM Oxygen Transmitter OEM Package",,"AII","OEM-15 D",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00112","Glove Box PPM Oxygen Transmitter OEM Package",,"AII","OEM-15 D GB",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00113","Nitrogen Generator PPM Oxygen Transmitter OEM Package",,"AII","OEM-15 D NG",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00114","PPM Oxygen Transmitter OEM Package",,"AII","OEM-15 EIS-G",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00115","PPM Oxygen Transmitter OEM Package",,"AII","OEM-15 EIS-P",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00116","PPM Oxygen Transmitter OEM Package",,"AII","OEM-15-1 D",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00117","PPM Oxygen Analyzer",,"AII","OEM-1500 A MB",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00118","Glove Box PPM Oxygen Transmitter OEM Package",,"AII","OEM-1500 SR",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00119","Glove Box Oxygen Transmitter OEM Package",,"AII","OEM-25 GB",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00120","Nitrogen Generator Oxygen Transmitter OEM Package",,"AII","OEM-25 NG",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00121","Nitrogen Generator Oxygen Purity Transmitter OEM Package",,"AII","OEM-31 NG",,"Transmitter","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00122","PPM H2S Analyzer",,"AII","OEM-7500 A MB",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00123","PPM H2S Analyzer",,"AII","OEM-7500 MOD",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00124","Oxygen Analyzer",,"AII","Palm O2 I",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00125","Oxygen Analyzer",,"AII","Palm O2 I R",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00126","Oxygen Analyzer Welding",,"AII","Palm O2 W",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00127","Oxygen Analyzer",,"AII","Palm O2 W R",,"Analyzer For Gas","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00128","Carbon Monoxide Sensor Assy",,"AII","A-2672",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00129","Carbon Monoxide Sensor Assy",,"AII","A-2672-10",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00130","Oxygen Sensor",,"AII","AII-11-60 IND",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00131","Oxygen Sensor",,"AII","AII-11-60 IND HC",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00132","Oxygen Purity Sensor",,"AII","GPR-11-120-4",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00133","Oxygen Purity Sensor",,"AII","GPR-11-120-4-AP",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00134","Oxygen Purity Sensor",,"AII","GPR-11-120-OP",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00135","Oxygen Purity Sensor",,"AII","GPR-11-120-RT",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00136","Oxygen Purity Sensor",,"AII","GPR-11-120-RTS",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00137","Oxygen Sensor",,"AII","GPR-11-21-RT",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00138","Oxygen Sensor",,"AII","GPR-11-23-M",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00139","Oxygen Sensor",,"AII","GPR-11-32",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00140","Oxygen Sensor",,"AII","GPR-11-32-4",,"Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00141","Oxygen Sensor",,"AII","GPR-11-32-4R",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00142","Oxygen Sensor",,"AII","GPR-11-32-H",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00143","Oxygen Sensor",,"AII","GPR-11-32-M",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00144","Oxygen Sensor",,"AII","GPR-11-32-RT",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00145","Oxygen Sensor",,"AII","GPR-11-32-RTS",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00146","Oxygen Sensor",,"AII","GPR-11-32-RTS-4",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00147","Oxygen Sensor",,"AII","GPR-11-60",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00148","Oxygen Sensor",,"AII","GPR-11-60-4",,"Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00149","Oxygen Sensor",,"AII","GPR-11-60-4KAI",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00150","Oxygen Sensor",,"AII","GPR-11-60-4KAI-A",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00151","Oxygen Sensor",,"AII","GPR-11-60-4R",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00152","Oxygen Sensor",,"AII","GPR-11-60-MD",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00153","Oxygen Sensor",,"AII","GPR-11-60-RT",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00154","Oxygen Sensor",,"AII","GPR-11-60-RTS",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00155","Oxygen Sensor",,"AII","GPR-11-63-T",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00156","Oxygen Sensor  (GPR-20FP)",,"AII","GPR-11-75-F",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00157","ppm Oxygen Sensor",,"AII","GPR-12-100-4",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00158","ppm Oxygen Sensor",,"AII","GPR-12-100-M",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00159","ppm Oxygen Sensor",,"AII","GPR-12-2000 MS",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00160","ppm Oxygen Sensor",,"AII","GPR-12-2000 MSH",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00161","ppm Oxygen Sensor",,"AII","GPR-12-333",,"Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00162","ppm Oxygen Sensor",,"AII","GPR-12-333 DC",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00163","PPM Oxygen Sensor",,"AII","GPR-12-333-M",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00164","PPM Oxygen Sensor",,"AII","GPR-12-333-MH",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00165","ppm Oxygen Sensor",,"AII","GPR-12-54",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00166","ppb Oxygen Sensor",,"AII","GPR-13-2000 UHP",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00167","ppb Oxygen Sensor",,"AII","GPR-13-2000 UHP-H",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00168","Carbon Dioxide Detector Assy",,"AII","OSV-42-1",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00169","Sensor Hydrogen Sulfide BE",,"AII","OSV-72-BE",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00170","Sensor Hydrogen Sulfide BE",,"AII","OSV-72-BE-LD",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00171","Sensor Hydrogen Sulfide BH",,"AII","OSV-72-BH",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00172","Sensor Hydrogen Sulfide BH-7M",,"AII","OSV-72-BH-7M",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00173","Sensor Hydrogen Sulfide BH Liquid Drain",,"AII","OSV-72-BH-LD",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00174","Oxygen Sensor",,"AII","XLT-11-24",,"Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00175","Oxygen Sensor",,"AII","XLT-11-24-2",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00176","Oxygen Sensor",,"AII","XLT-11-24-4",,"Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00177","Oxygen Sensor",,"AII","XLT-11-24-LD",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00178","Oxygen Sensor",,"AII","XLT-11-24-RT",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00179","Oxygen Sensor",,"AII","XLT-11-24-RTS",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00180","Oxygen Sensor",,"AII","XLT-11-32-4",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00181","Oxygen Sensor",,"AII","XLT-11-32-RT",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00182","ppm Oxygen Sensor",,"AII","XLT-12-100-4",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00183","ppm Oxygen Sensor",,"AII","XLT-12-100-M",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00184","ppm Oxygen Sensor",,"AII","XLT-12-333",,"Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00185","ppm Oxygen Sensor",,"AII","XLT-12-333-H",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00186","ppm Oxygen Sensor  (GPR-1500 AIS/IS-LD)",,"AII","XLT-12-333-LD",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00187","ppm Oxygen Sensor  (GPR-1500 AIS/IS-LD)",,"AII","XLT-12-333-LD-H2S",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00188","ppm Oxygen Sensor",,"AII","XLT-12-333-M",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00189","Oxygen Sensor",,"AII","B1SA",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00190","Oxygen Sensor",,"AII","GPR-11-233-H",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00191","Oxygen Sensor",,"AII","GPR-11-37-4",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00192","Oxygen Sensor",,"AII","GPR-11-37-I",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00193","Oxygen Sensor",,"AII","GPR-11-917-J","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: 7-13 mV
+OEM Analyzers:
+Automotive Exhaust - various
+Replaces Sensor:
+City Tech 
+Envitech 
+MSA 
+Teledyne R-17A (jack), R-22A (3-pin)","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00194","Oxygen Sensor",,"AII","GPR-11-917-M","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: 7-13 mV
+OEM Analyzers:
+Automotive Exhaust - various
+Replaces Sensor:
+City Tech 
+Envitech 
+MSA 
+Teledyne R-17A (jack), R-22A (3-pin)","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00195","Oxygen Sensor",,"AII","PSR-11-21","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: 295-625 μA 
+OEM Analyzers:
+AMI 70 
+AMI 111 
+AMI 201 RS/RSP/RSM 
+GE Panametrics OX-1 
+Teledyne 300 P 
+Teledyne 311 P/PC 
+Teledyne 320/320 P Series 
+Teledyne 326 A/B, RA/RB 
+Teledyne 327 RA/RB 
+Teledyne 328/328 R 
+Teledyne 3000 PA/PB 
+Teledyne 3010 PA/PB 
+Teledyne 3020 P 
+Teledyne Insta Trans 
+Teledyne OT-3
+Replaces Sensor:
+AMI P2 
+GE Sensing Panametrics OX-3 
+Teledyne B-1","Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00196","Oxygen Sensor",,"AII","PSR-11-213","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: 295-625 μA
+Replaces Sensor:
+Teledyne B-1C
+*Use for H2, He, hydrocarbon gas","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00197","Oxygen Sensor",,"AII","PSR-11-23","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: 235-355 μA
+OEM Analyzers:
+See PSR-11-21 
+AMI 221 R 
+Teledyne 335 
+Teledyne 3350
+AMI 70 
+AMI 111 
+AMI 201 RS/RSP/RSM 
+GE Panametrics OX-1 
+Teledyne 300 P 
+Teledyne 311 P/PC 
+Teledyne 320/320 P Series 
+Teledyne 326 A/B, RA/RB 
+Teledyne 327 RA/RB 
+Teledyne 328/328 R 
+Teledyne 3000 PA/PB 
+Teledyne 3010 PA/PB 
+Teledyne 3020 P 
+Teledyne Insta Trans 
+Teledyne OT-3
+Replaces Sensor:
+AMI P2 
+Teledyne B-3","Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00198","Oxygen Sensor",,"AII","PSR-11-233","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: 235-355 μA
+Replaces Sensor:
+Teledyne B-3C
+*Use for H2, He, hydrocarbon gas","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00199","Oxygen Sensor",,"AII","PSR-11-25",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00200","Oxygen Sensor",,"AII","PSR-11-33-JL",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00201","Oxygen Sensor",,"AII","PSR-11-330","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: 165-235 μA
+OEM Analyzers:
+AMI 70 
+AMI 111 
+AMI 201 RS/RSP/RSM 
+GE Panametrics OX-1 
+Teledyne 300 P 
+Teledyne 311 P/PC 
+Teledyne 320/320 P Series 
+Teledyne 326 A/B, RA/RB 
+Teledyne 327 RA/RB 
+Teledyne 328/328 R 
+Teledyne 3000 PA/PB 
+Teledyne 3010 PA/PB 
+Teledyne 3020 P 
+Teledyne Insta Trans 
+Teledyne OT-3
+Replaces Sensor:
+AMI P4 
+Analox C3SA 
+Teledyne C-3","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00202","Oxygen Sensor",,"AII","PSR-11-39",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00203","Oxygen Sensor",,"AII","PSR-11-52","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: -40 to –80 μA
+OEM Analyzers:
+Teledyne 329 
+Teledyne 3290 
+Teledyne 3300
+Replaces Sensor:
+Teledyne E-2","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00204","Oxygen Sensor",,"AII","PSR-11-54","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: 165-235 μA
+OEM Analyzers:
+AMI 70 
+AMI 111 
+AMI 201 RS/RSP/RSM 
+GE Panametrics OX-1 
+Teledyne 300 P 
+Teledyne 311 P/PC 
+Teledyne 320/320 P Series 
+Teledyne 326 A/B, RA/RB 
+Teledyne 327 RA/RB 
+Teledyne 328/328 R 
+Teledyne 3000 PA/PB 
+Teledyne 3010 PA/PB 
+Teledyne 3020 P 
+Teledyne Insta Trans 
+Teledyne OT-3","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00205","Oxygen Sensor",,"AII","PSR-11-54-3",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00206","Oxygen Sensor",,"AII","PSR-11-75-KE","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen 
+Signal Output: 10-14 mV 
+OEM Analyzers:
+Various OEM analyzers 
+Replaces Sensor:
+Figaro KE-25 (Japan Storage)","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00207","Oxygen Sensor",,"AII","PSR-11-75-KE10",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00208","Oxygen Sensor",,"AII","PSR-11-75-KE12",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00209","Oxygen Sensor",,"AII","PSR-11-75-KE250A",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00210","Oxygen Sensor",,"AII","PSR-11-75-KEF3",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00211","Oxygen Sensor",,"AII","PSR-11-75-KEF4",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00212","Oxygen Sensor",,"AII","PSR-11-75-KEFR-C",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00213","Oxygen Sensor",,"AII","PSR-11-75-KEFR-NC",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00214","Oxygen Sensor",,"AII","PSR-11-77 Ind",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00215","Oxygen Sensor",,"AII","PSR-11-OX-3",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00216","ppm Oxygen Sensor",,"AII","PSR-12-223","Range Min: 0-10 PPM Oxygen 
+Range Max: 0-1% Oxygen
+Signal Output: 295-625 μA
+OEM Analyzers:
+AMI 1000 RS 
+AMI 2001 RS/RSP/RSM 
+GE Panametrics OX-1 
+Teledyne 300 T 
+Teledyne 310, 311/D/XL, 3110 
+Teledyne 315 
+Teledyne 316 A/B, RA/RB 
+Teledyne 317 RA/RB 
+Teledyne 318/318 R 
+Teledyne 3000 TA/TA-XL/TB 
+Teledyne 3010 TA/TB 
+Teledyne 3020 T 
+Teledyne 3160 
+Teledyne 3190 
+Teledyne Insta Trans 
+Teledyne OT-3 
+Teledyne Turbo 2/2P
+Replaces Sensor:
+AMI T1 
+GE Sensing Panametrics OX-1 
+Teledyne B-2/C/CAP/C-XL 
+Teledyne M-2 
+Teledyne S-2 
+Teledyne Z-2 ","Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00217","ppm Oxygen Sensor",,"AII","PSR-12-223-IT","Range Min: 0-10 PPM Oxygen 
+Range Max: 0-1% Oxygen
+Signal Output: 295-625 μA","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00218","PPM  Oxygen Sensor",,"AII","PSR-12-223-L","Range Min: 0-10 PPM Oxyge
+Range Max: 0-1% Oxygen
+Signal Output: 295-625 μA 
+OEM Analyzers:
+See PSR-12-223; requires OEM Manufacturer original cell block or retrofit kit. 
+Replaces Sensor:
+Teledyne L-2, L-2C ","Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00219","ppm Oxygen Sensor",,"AII","PSR-12-243",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00220","ppm Oxygen Sensor",,"AII","PSR-12-OX-1",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00221","Oxygen Sensor",,"AII","SAF-11-02-I",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00222","Oxygen Sensor",,"AII","XLT-11-15","Range Min: 0-1% Oxygen 
+Range Max: 0-100% Oxygen
+Signal Output: 165-235 μA
+OEM Analyzers:
+AMI 70 
+AMI 111 
+AMI 201 RS/RSP/RSM 
+GE Panametrics OX-1 
+Teledyne 300 P 
+Teledyne 311 P/PC 
+Teledyne 320/320 P Series 
+Teledyne 326 A/B, RA/RB 
+Teledyne 327 RA/RB 
+Teledyne 328/328 R 
+Teledyne 3000 PA/PB 
+Teledyne 3010 PA/PB 
+Teledyne 3020 P 
+Teledyne Insta Trans 
+Teledyne OT-3 
+Replaces Sensor:
+AMI P3 
+GE Sensing Panametrics OX-4 
+Teledyne A-3, A-5","Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00223","Oxygen Sensor",,"AII","XLT-11-1513",,"Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00224","Oxygen Sensor",,"AII","XLT-11-1523",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00225","Oxygen Sensor",,"AII","XLT-11-39",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00226","Oxygen Sensor",,"AII","XLT-11-52",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00227","Oxygen Sensor",,"AII","XLT-11-75-KE3",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00228","Oxygen Sensor",,"AII","XLT-11-75-KEF3",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00229","Oxygen Sensor",,"AII","XLT-11-OX-4",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00230","ppm Oxygen Sensor",,"AII","XLT-12-123","Range Min: 0-10 PPM Oxygen 
+Range Max: 0-1% Oxygen
+Signal Output: 295-625 μA
+Replaces Sensor:
+AMI T2 
+GE Sensing Panametrics OX-2 
+Teledyne A-2, A-2C ","Sensor element","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00231","ppm Oxygen Sensor",,"AII","XLT-12-123 L2",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00232","ppm Oxygen Sensor",,"AII","XLT-12-123-IT",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00233","PPM Oxygen Sensor",,"AII","XLT-12-123-T2",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"
+"Product_00234","ppm Oxygen Sensor",,"AII","XLT-12-OX-2",,"Unknown","TRUE","TRUE","Stockable Product","Make to Stock","Buy","Standard Price","Ea","Ea","Periodical (manual)",0,0,"Output VAT","Input VAT"

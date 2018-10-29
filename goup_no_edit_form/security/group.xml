@@ -1,0 +1,7 @@
+<openerp>
+	<data noupdate="1">
+		<record model="res.groups" id="group_no_edit_form">
+			<field name="name">No edit forms (Inv/DO)</field>
+		</record>
+    </data>
+</openerp>

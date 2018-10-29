@@ -1,0 +1,8 @@
+id,ref,date,period_id,journal_id,line_id/name,line_id/partner_id,line_id/account_id,line_id/date_maturity,line_id/debit,line_id/credit,line_id/amount_currency,line_id/currency_id,line_id/account_tax_id,line_id/tax_amount
+account_move_open_balance_2,AP Balance as of 30/6/2014,2014-06-30,06/2014,Opening Entries Journal,ATF/14/014,C.V. AUTTECH S.C.,211200,2014-07-30,,5842.44,-104.94,EUR,,
+,,,,,2010110538,บริษัท เคโมไซเอนซ์ (ประเทศไทย) จำกัด,211200,2014-08-20,,1260.57,,,,
+,,,,,1906002381,ไทยดรายไอซ์,211200,2014-07-20,,7200,,,,
+,,,,,TI3028,บริษัท เน็ตโซล จำกัด,211200,2014-07-10,,7907.3,,,,
+,,,,,A-364478,บริษัท ร่วมเจริญกรุ๊ป จำกัด,211200,2014-08-05,,9630,,,,
+,,,,,A-365406,บริษัท ร่วมเจริญกรุ๊ป จำกัด,211200,2014-08-05,,856,,,,
+,,,,,AP USD B/F 30 Jun 2014_Temp A/C,,999999,,32696.31,,,,,

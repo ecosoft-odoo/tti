@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	       
+    	<record id="view_quotation_split_confirm" model="ir.ui.view">
+            <field name="name">Split Quotation</field>
+            <field name="model">split.quotation.confirm</field>
+            <field name="arch" type="xml">
+                <form string="Split Quotation" version="7.0">
+                    <separator colspan="4" string="Do you really want to split the quotation(s)?" />
+                    <group>                       
+                        <field name="quote_date"/>
+                    </group>
+                    <footer>
+                        <button name="split_quotations" string="Confirm" type="object" class="oe_highlight"/>
+                        or
+                        <button string="Cancel" class="oe_link" special="cancel" />
+                    </footer>
+               </form>
+            </field>
+        </record>
+        
+        <act_window id="action_split_quotation_line"
+            multi="True"
+            key2="client_action_multi" name="Confirm Split"
+            res_model="split.quotation.confirm" src_model="sale.order.line"
+            view_id="view_quotation_split_confirm" 
+            context="{'Split_Quote':True}"            
+            target="new"/>
+
+	</data>
+</openerp>

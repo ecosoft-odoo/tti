@@ -1,0 +1,7 @@
+"id","groups_id/id"
+"sale_prequotation.menu_pq","group_calculation_sheet_owner,group_calculation_sheet_manager,base.group_sale_salesman,base.group_sale_manager,product.group_sale_pricelist,base.group_sale_salesman_all_leads"
+"sale.menu_sale_order","group_calculation_sheet_owner,group_calculation_sheet_manager,base.group_sale_salesman,base.group_sale_manager,product.group_sale_pricelist,base.group_sale_salesman_all_leads"
+"sale.menu_dashboard_sales","group_calculation_sheet_owner,group_calculation_sheet_manager,base.group_sale_salesman,base.group_sale_manager,product.group_sale_pricelist,base.group_sale_salesman_all_leads"
+"base.menu_base_partner","group_calculation_sheet_owner,group_calculation_sheet_manager,base.group_sale_salesman,base.group_sale_manager,product.group_sale_pricelist,base.group_sale_salesman_all_leads"
+"base.menu_base_config","base.group_sale_manager,sale_prequotation.group_calculation_sheet_manager,base.group_system,base.group_partner_manager"
+"sale_prequotation.menu_sales_margins","group_calculation_sheet_manager"

@@ -1,0 +1,9 @@
+"id","supplier/supplier/id","seller_ids/product_code","supplier/min_qty","seller_ids/pricelist_ids/price","seller_ids/pricelist_ids/min_quantity"
+"Product_KNF_0001","res_partner_supplier_0003",,1,,1
+"Product_KNF_0002","res_partner_supplier_0003",,1,,1
+"Product_KNF_0003","res_partner_supplier_0003",,1,,1
+"Product_KNF_0004","res_partner_supplier_0003",,1,,1
+"Product_KNF_0005","res_partner_supplier_0003",,1,,1
+"Product_KNF_0006","res_partner_supplier_0003",,1,,1
+"Product_KNF_0007","res_partner_supplier_0003",,1,,1
+"Product_KNF_0008","res_partner_supplier_0003",,1,,1

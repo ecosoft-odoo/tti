@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_order_form_ext" model="ir.ui.view">
+            <field name="name">view.order.form.ext</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <data>	
+                	<field name="name" position="after" >
+						<div class="oe_right oe_button_box">
+	                        <label string="Not Used" />
+	                        <field name="not_used"/>
+	                    </div> 
+	                </field>
+                	<field name="date_order" position="before" version="7.0">
+						<field name="doc_version" attrs="{'invisible':[('state','!=','draft')]}"/>
+	                </field>
+	                <field name="client_order_ref" position="after" version="7.0">					
+						<field name="pq_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/> 
+						<field name="pq_type" />
+					</field>
+					<xpath expr="//field[@name='partner_id']" position="attributes">
+						<attribute name="domain">[('customer','=',True),('is_company','=',True)]</attribute>
+					</xpath>
+					
+					<xpath expr="//form/sheet/notebook/page/field[@name='order_line']/tree[@string='Sales Order Lines']" position="attributes">
+						<attribute name="editable">True</attribute>
+					</xpath>
+		
+		            <xpath expr="//group[@name='sale_total']" position="after">
+		                <group name="sale_margin_grp">
+		                	<field name="percent_margin" />
+		                	<field name="acct_percent_margin" invisible="1" />
+		                    <field name="pq_margin" invisible="1" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+		                    <field name="pq_acct_margin" invisible="1" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+		              		<field name="overall_product_type" />
+						</group>
+		            </xpath>		
+		           
+	                		
+				</data>
+			</field>
+        </record>
+        
+        <record id="action_prepq_quotation" model="ir.actions.act_window">
+            <field name="name">Quotation Created</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>            
+            <field name="view_id" ref="sale.view_quotation_tree"/>
+            <field name="target">current</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a new supplier payment.
+              </p><p>
+                OpenERP helps you easily track payments you make and the remaining balances you need to pay your suppliers.
+              </p>
+            </field>
+        </record>
+        
+        <!-- Not Used field -->
+        <record id="view_sales_order_filter_ext" model="ir.ui.view">
+            <field name="name">view.sales.order.filter.ext</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_sales_order_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="/search/field[@name='name']" position="after">
+                    <separator/>
+                    <filter string="Active Worksheet" name="active_worksheet" domain="[('not_used','=', False)]" help="Active Worksheet"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="sale.action_orders" model="ir.actions.act_window">
+        	<field name="context">{"search_default_active_worksheet":1}</field>
+        </record>
+                
+	</data>
+</openerp>

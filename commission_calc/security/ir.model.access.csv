@@ -1,0 +1,3 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"commission_calc_user","commission_calc_user","commission_calc.model_sale_team","group_commission_user",1,0,0,0
+"commission_calc_manager","commission_calc_manager","commission_calc.model_sale_team","group_commission_manager",1,1,1,1

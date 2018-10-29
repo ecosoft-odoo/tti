@@ -1,0 +1,10 @@
+"id","menu_access/id",
+"purchase.group_purchase_user","purchase.menu_purchase_rfq,purchase.menu_procurement_management_invoice,purchase.menu_purchase_form_action,purchase.menu_board_purchase,base.menu_purchase_root",
+"purchase_requisition.group_purchase_requisition_user","purchase_requisition.menu_purchase_requisition_pro_mgt,base.menu_purchase_root",
+"commission_calc.group_commission_user","commission_calc.menu_commission_calc,commission_calc.menu_commission_worksheet",
+"commission_calc.group_commission_manager","commission_calc.menu_commission_calc,commission_calc.menu_sale_team,commission_calc.menu_commission_worksheet",
+"base.group_sale_salesman","sale_prequotation.menu_pq,sale.menu_sale_order,sale.menu_dashboard_sales,base.menu_base_partner",
+"base.group_sale_manager","base.next_id_64,sale_prequotation.menu_pq,sale.menu_sale_order,sale_prequotation.menu_sales_margins,base.menu_base_partner,base.menu_base_config",
+"sale_prequotation.group_calculation_sheet_user","sale_prequotation.menu_pq",
+"sale_prequotation.group_sale_engineer","sale_prequotation.menu_pq,base.menu_base_partner",
+"commission_calc.group_commission_Account","commission_calc.menu_commission_calc,base.menu_base_partner,commission_calc.menu_commission_worksheet","Accounting"

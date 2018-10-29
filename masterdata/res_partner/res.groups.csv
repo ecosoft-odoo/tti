@@ -1,0 +1,5 @@
+"id","name","users/id"
+"sale_prequotation.group_calculation_sheet_user","User",
+"sale_prequotation.group_calculation_sheet_owner","Owner","user_poranee,user_pakorn,user_prapansak,user_tipthana,user_kulwadee,user_sudarat"
+"sale_prequotation.group_calculation_sheet_manager","Manager","base.user_root"
+"sale_prequotation.group_calculation_sheet_engineer","Engineer","user_wittaya,user_apirati,user_sonkran,user_daecha,user_sorayuth"

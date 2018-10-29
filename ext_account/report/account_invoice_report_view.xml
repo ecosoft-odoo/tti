@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    	<record id="view_account_invoice_report_tree_ext" model="ir.ui.view">
+            <field name="name">view.account.invoice.report.tree.ext</field>
+            <field name="model">account.invoice.report</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.view_account_invoice_report_tree"/>
+            <field name="arch" type="xml">
+                <data>
+                	<field name="date" position="before">
+                		<field name="sale_order_id" position="before"/>
+                		<field name="brand_id" position="before"/>
+                	</field>
+				</data> 
+            </field>
+       	</record>
+       
+    	<record id="view_account_invoice_report_search_ext" model="ir.ui.view">
+            <field name="name">view.account.invoice.report.search.ext</field>
+            <field name="model">account.invoice.report</field>
+            <field name="inherit_id" ref="account.view_account_invoice_report_search"/>
+            <field name="arch" type="xml">
+                <data>
+                	<field name="date" position="before">
+                		<field name="sale_order_id" />
+                		<field name="brand_id" />
+                		<field name="pq_type" />
+                	</field>
+                	<xpath expr="//group/filter[@string='Product']" position="after">
+                    	<filter string="Brand" name="brand_id" context="{'group_by':'brand_id'}"/>
+                    	<filter string="Sales Order" name="sale_order_id" context="{'group_by':'sale_order_id'}"/>
+                    	<filter string="PQ Type" name="pq_type" context="{'group_by':'pq_type'}"/>
+                	</xpath>
+				</data> 
+            </field>
+       </record>
+
+</data>
+</openerp>

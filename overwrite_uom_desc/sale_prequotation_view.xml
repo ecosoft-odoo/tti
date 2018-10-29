@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_preq_form_ext" model="ir.ui.view">
+            <field name="name">view.preq.form.ext</field>
+            <field name="model">sale.prequotation</field>
+            <field name="inherit_id" ref="sale_prequotation.view_preq_form"/>
+            <field name="arch" type="xml">
+                <data>
+                	<field name="cal_date" position="after">
+                		<field name="overwrite_uom" groups="overwrite_uom_desc.group_overwrite_uom_desc"/>
+                	</field>
+            	</data>
+			</field>
+        </record>
+	</data>
+</openerp>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+       	<record id="dep_sale" model="hr.department">
+          <field name="name">Sales</field>
+      	</record>
+      	<record id="dep_Accountant" model="hr.department">
+          <field name="name">Accountant</field>
+      	</record>
+      	<record id="dep_Engineering" model="hr.department">
+          <field name="name">Engineering</field>
+      	</record>
+      	<record id="dep_HR" model="hr.department">
+          <field name="name">HR</field>
+      	</record>
+      	<record id="dep_IT" model="hr.department">
+          <field name="name">IT</field>
+      	</record>
+      	<record id="dep_MD" model="hr.department">
+          <field name="name">MD</field>
+      	</record>
+      	<record id="dep_Messenger" model="hr.department">
+          <field name="name">Messenger</field>
+      	</record>
+      	<record id="dep_Purchasing" model="hr.department">
+          <field name="name">Purchasing</field>
+      	</record>
+    </data>
+</openerp>

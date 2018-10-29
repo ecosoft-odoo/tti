@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+    	<record id="invoice_form_ext" model="ir.ui.view">
+            <field name="name">invoice.form.ext</field>
+            <field name="model">account.invoice</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <data>
+                	<field name="account_id" position="before">
+                		<field name="pq_type" />
+                	</field>
+                	<field name="number" position="after">
+                		<field name="proforma_number" />
+                	</field>
+                	<field name="partner_id" position="after">
+                		<field name="overwrite_shipto"/>
+                    </field>
+                	<button name="invoice_open" position="attributes">
+					    <attribute name="groups">account.group_account_invoice</attribute>
+					</button>            
+                    <button name="invoice_cancel" position="attributes">
+					    <attribute name="groups">account.group_account_invoice</attribute>
+					</button>
+                    <button name="%(account.action_account_invoice_refund)d" position="attributes">
+					    <attribute name="groups">account.group_account_invoice</attribute>
+					</button>  		            
+                    <button name="action_cancel_draft" position="attributes">
+					    <attribute name="groups">account.group_account_invoice</attribute>
+					</button>  		
+				</data> 
+            </field>
+       </record>
+       
+    	<record id="view_account_invoice_filter_ext" model="ir.ui.view">
+            <field name="name">view.account.invoice.filter.ext</field>
+            <field name="model">account.invoice</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+                <data>
+                	<filter string="Partner" position="before" >
+                        <filter string="PQ Type" domain="[]" context="{'group_by':'pq_type'}"/>
+                	</filter>
+				</data> 
+            </field>
+       </record>
+    </data>
+</openerp>

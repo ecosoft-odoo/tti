@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+    	<record id="purchase_order_form_ext" model="ir.ui.view">
+            <field name="name">purchase.order.form.ext</field>
+            <field name="model">purchase.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form"/>
+            <field name="arch" type="xml">
+                <data>
+		            <xpath expr="/form/sheet/notebook/page/field/tree/field[@name='product_id']" position="before">
+                    	<field name="sequence" widget="handle"/>
+		            </xpath>
+                	<field name="date_order" position="after">
+                		<field name="overwrite_shipto"/>
+                    </field>
+				</data> 
+            </field>
+       </record>
+
+        <record id="purchase_order_tree" model="ir.ui.view">
+            <field name="name">purchase.order.tree</field>
+            <field name="model">purchase.order</field>
+            <field name="inherit_id" ref="purchase.purchase_order_tree"/>
+            <field name="arch" type="xml">
+                <data>	
+	                <field name="amount_total" position="before" version="7.0">								
+						<field name="amount_net" /> 
+					</field>
+				</data>
+            </field>
+        </record>  
+        
+    	<record id="view_request_for_quotation_filter" model="ir.ui.view">
+            <field name="name">view.request.for.quotation.filter</field>
+            <field name="model">purchase.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="purchase.view_request_for_quotation_filter"/>
+            <field name="arch" type="xml">
+                <data>
+                	<filter string="Supplier" position="before" >
+                        <filter string="Pricelist" domain="[]" context="{'group_by':'pricelist_id'}"/>
+                	</filter>
+				</data> 
+            </field>
+       </record> 
+    	<record id="view_purchase_order_filter" model="ir.ui.view">
+            <field name="name">view.purchase.order.filter</field>
+            <field name="model">purchase.order</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="purchase.view_purchase_order_filter"/>
+            <field name="arch" type="xml">
+                <data>
+                	<filter string="Supplier" position="before" >
+                        <filter string="Pricelist" domain="[]" context="{'group_by':'pricelist_id'}"/>
+                	</filter>
+				</data> 
+            </field>
+       </record> 
+    </data>
+</openerp>

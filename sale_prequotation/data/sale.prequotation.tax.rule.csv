@@ -1,0 +1,16 @@
+id,prequote_type,split,quote_type,tax_ids
+sale_prequotation_tax_rule_1,trading,FALSE,,VAT 7%
+sale_prequotation_tax_rule_2,trading,TRUE,material,VAT 7%
+sale_prequotation_tax_rule_3,trading,TRUE,labour,VAT 7%
+sale_prequotation_tax_rule_4,project,FALSE,,VAT 7%
+sale_prequotation_tax_rule_5,project,TRUE,material,VAT 7%
+sale_prequotation_tax_rule_6,project,TRUE,labour,VAT 7%
+sale_prequotation_tax_rule_7,calibrate,FALSE,,VAT 7%
+sale_prequotation_tax_rule_8,calibrate,TRUE,material,VAT 7%
+sale_prequotation_tax_rule_9,calibrate,TRUE,labour,VAT 7%
+sale_prequotation_tax_rule_10,repair,FALSE,,VAT 7%
+sale_prequotation_tax_rule_11,repair,TRUE,material,VAT 7%
+sale_prequotation_tax_rule_12,repair,TRUE,labour,VAT 7%
+sale_prequotation_tax_rule_13,rent,FALSE,,VAT 7%
+sale_prequotation_tax_rule_14,rent,TRUE,material,VAT 7%
+sale_prequotation_tax_rule_15,rent,TRUE,labour,VAT 7%

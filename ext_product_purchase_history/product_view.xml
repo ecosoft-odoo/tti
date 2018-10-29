@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="product_normal_form_view_ext2" model="ir.ui.view">
+            <field name="name">product.normal.form.view.ext</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product_purchase_history.product_normal_form_view_ext"/>
+            <field name="arch" type="xml">		
+				<data>	 
+					<xpath expr="//page[@string='Purchase History']" position="attributes">
+						<attribute name="groups" >purchase.group_purchase_user,sale_prequotation.group_sale_engineer</attribute> 
+					</xpath>		
+            	</data>
+			</field>
+        </record>					
+
+	</data>
+</openerp>

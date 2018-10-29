@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="invoice_form_ext" model="ir.ui.view">
+            <field name="name">invoice.form.ext</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <data>	
+					<xpath expr="/form/sheet//field[@name='number']" position="after">
+                        <field name="past_doc_number" class="oe_inline" 
+                        	attrs="{'invisible': ['|', ('past_doc', '!=', True), ('state', '!=', 'draft')], 'required': [('past_doc', '=', True)]}"/>
+                    </xpath>
+					<xpath expr="/form/sheet//field[@name='number']" position="after">
+						<div class="oe_right">
+	                        <field name="past_doc" />
+	                        <label string="Past" />
+						</div>           
+					</xpath>           	
+				</data>
+			</field>
+        </record>
+        
+        <record id="invoice_supplier_form_ext" model="ir.ui.view">
+            <field name="name">invoice.supplier.form.ext</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <data>	
+					<xpath expr="/form/sheet//field[@name='number']" position="after">
+                        <field name="past_doc_number" class="oe_inline" 
+                        	attrs="{'invisible': ['|', ('past_doc', '!=', True), ('state', '!=', 'draft')], 'required': [('past_doc', '=', True)]}"/>
+                    </xpath>
+					<xpath expr="/form/sheet//field[@name='number']" position="after">
+						<div class="oe_right">
+	                        <field name="past_doc" />
+	                        <label string="Past" />
+						</div>           
+					</xpath>           	
+				</data>
+			</field>
+        </record>
+	</data>
+</openerp>

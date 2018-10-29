@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="view_billing_receipt_form">
+            <field name="name">account.billing.receipt.form</field>
+            <field name="model">account.billing</field>
+            <field name="inherit_id" ref="account_billing.view_billing_receipt_form" />
+            <field name="arch" type="xml">
+            	<xpath expr="/form/sheet/group/group/field[@name='partner_id']" position="attributes">                                     
+                	<attribute name="domain"> [('customer', '=', True),('is_company','=',True)]</attribute>           
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,2 @@
+"id","pricelist_id/id","list_price","uom_id/id","uom_po_id/id","uos_id/id","name","categ_id/id","type"
+"product.product_product_consultant",,"75.0","product.product_uom_hour","product.product_uom_hour",,"Service","product.product_category_all","Service"

@@ -1,0 +1,11 @@
+Steps to create SO for testing commission
+- Make sure that, UOM=Hour is active. We need this for product=Service.
+- Import Customer for testing -> res.partner.csv
+- Import Sales Order -> sale.order (2 files).
+- Make it confirmed by running following SQL
+
+<pre>
+
+update sale_order set state = 'manual' where name like '130%'
+
+</pre>

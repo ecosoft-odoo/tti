@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="invoice_form_ext" model="ir.ui.view">
+            <field name="name">invoice.form.ext</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <data>								 
+					<xpath expr="/form/sheet/notebook" position="before">
+	                    <group>
+                            <field name="overwrite_uom" readonly="1"/>                      
+	                    </group>
+						<div style="color:red">							
+							<label string="Overwrite UoM is used in Sales Order, please check 'Overwrite UoM' Tab before proceed" attrs="{'invisible': [('overwrite_uom', '!=', True)]}"/>		
+						</div>		  
+					</xpath>
+					<xpath expr="/form/sheet/notebook/page[@string='Invoice Lines']" position="after">
+						<page string="Overwrite UoM" attrs="{'invisible': [('overwrite_uom', '!=', True)]}">
+                            <field name="invoice_line_uom">
+                                <tree string="Invoice Lines" create="0" editable="bottom">
+                                	<field name="product_id" readonly="1"/>
+                                	<field name="name" readonly="1"/>
+                                	<field name="disp_product_uom_qty" attrs="{'required': [('disp_uom', '!=', False)]}"/>
+                                	<field name="disp_uom"/>
+                                	<field name="disp_price_unit" attrs="{'required': [('disp_uom', '!=', False)]}"/>
+                                </tree>
+                            </field>
+                        </page>
+					</xpath>
+            	</data>
+			</field>
+        </record>
+	</data>
+</openerp>

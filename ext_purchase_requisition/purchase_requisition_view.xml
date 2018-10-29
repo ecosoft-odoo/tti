@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+	    
+	    <record model="ir.ui.view" id="view_purchase_requisition_form_ext">
+	        <field name="name">view.purchase.requisition.form.ext</field>
+	        <field name="model">purchase.requisition</field>
+	        <field name="inherit_id" ref="purchase_requisition_double_validation.view_purchase_requisition_form_ext"/>
+	        <field name="arch" type="xml">
+	        	<field name="origin" position="attributes">
+	        		<attribute name="readonly">True</attribute>
+	        	</field>
+	            <xpath expr="/form/header/field[@name='state']" position="attributes">
+	            	<attribute name="statusbar_visible">draft,in_purchase,done</attribute>
+	            </xpath>
+	            <xpath expr="/form/header/button[@name='tender_in_progress']" position="replace">
+	            </xpath>
+	            <xpath expr="//form/sheet/group/group/field[@name='date_end']" position="after">
+	            	<field name="customer_ref"/>
+	        		<field name="calc_sheet_id" on_change="calc_sheet_id_onchange(calc_sheet_id)" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
+	        	</xpath>	
+			</field>
+	    </record>
+	    
+	    <record model="ir.ui.view" id="view_purchase_requisition_form_ext2">
+	        <field name="name">view.purchase.requisition.form.ext2</field>
+	        <field name="model">purchase.requisition</field>
+	        <field name="inherit_id" ref="job_cost_sheet.view_purchase_requisition_form_ext"/>
+	        <field name="arch" type="xml">
+	            <xpath expr="//form/sheet/group/group//field[@name='ref_sale_order_id']" position="attributes">
+	            	<attribute name="attrs">{'required': [('calc_sheet_id', '!=', False)]}</attribute>
+	            	<attribute name="domain">[('pq_id', '=', calc_sheet_id), ('state','in',('progress','manual','done'))]</attribute>
+	            </xpath>	  	    
+			</field>
+	    </record>
+	    
+	    <record model="ir.ui.view" id="view_purchase_requisition_tree_ext">
+	        <field name="name">view.purchase.requisition.tree.ext</field>
+	        <field name="model">purchase.requisition</field>
+	        <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_tree"/>
+	        <field name="arch" type="xml">
+	            <xpath expr="/tree/field[@name='origin']" position="after">
+	            	<field name="calc_sheet_id"/>
+	            	<field name="ref_sale_order_id"/>
+	            </xpath>
+	            
+			</field>
+	    </record>
+	    
+	    <record id="view_purchase_requisition_filter_ext" model="ir.ui.view">
+            <field name="name">purchase.requisition.list.select.ext</field>
+            <field name="model">purchase.requisition</field>
+            <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_filter"/>
+            <field name="arch" type="xml">
+            	<xpath expr="/search/field[@name='exclusive']" position="after">
+	            	<field name="calc_sheet_id"/>
+	            </xpath>
+            </field>
+        </record>
+
+	    
+	    <menuitem name="Purchases"
+            id="base.menu_purchase_root"
+            groups="purchase_requisition.group_purchase_requisition_manager,purchase_requisition.group_purchase_requisition_user"
+            sequence="60"/>		
+        <menuitem
+	        id="purchase_requisition.menu_purchase_requisition_pro_mgt"
+	        name="Purchase Requisitions"
+	        sequence="10"
+	        parent="purchase.menu_procurement_management"
+	        groups="purchase_requisition.group_purchase_requisition_manager,purchase_requisition.group_purchase_requisition_user"
+	        action="purchase_requisition.action_purchase_requisition"/>
+	    
+	</data>
+</openerp>

@@ -1,0 +1,3 @@
+id,user_ids/id,city,name,company_registry,rml_header1,country_id/id,currency_id/id,custom_footer,email,expects_chart_of_accounts,fax,paper_format,partner_id/id,paypal_account,phone,rml_footer,street,street2,tax_calculation_rounding_method,vat,website,zip
+base.main_company,base.user_root,Rayong,"Tame Tech International Co., Ltd.",,One Stop Shop for Gas/Liquid Sample Conditioning System,base.th,base.THB,False,salesteam@tametech.co.th,True,'+66-38-872090,A4,base.main_partner,,'+66-38-872091-2 +66-81-377-8539,Phone: +66-38-872091-2 | Fax: +66-38-872090 | Email:salesteam@tametech.co.th | Website: www.tametech.co.th,19/5 Watchodhin-Kaopai Rd. T.Tapma,"
+A.Muangrayong",Round per Line,,www.tametech.co.th,21000

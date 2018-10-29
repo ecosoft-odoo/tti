@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<openerp>
+    <data noupdate="1">
+
+		<!-- 1. Commission Rule for Manager -->
+		<record id="commission_rule_for_manager" model="commission.rule">
+			<field name="name">Commission Rule for Managers</field>
+			<field name="type">percent_accumulate</field>
+		</record>
+		<!-- 1.1 Commission Rate -->
+		<record id="rule_for_manager_rate_" model="commission.rule.rate">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="amount_over">0</field>
+			<field name="amount_upto">999999999</field>
+			<field name="percent_commission">1</field>
+		</record>    
+		<!-- 1.2 Commission Condition -->
+		<!-- 1.2.1 Domestic -->
+		<record id="condition_for_manager_rate_11" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="sequence">11</field>
+			<field name="sale_type">domestic</field>
+			<field name="sale_margin_over">14</field>
+			<field name="sale_margin_upto">1000</field>
+			<field name="commission_coeff">1</field>
+			<field name="accumulate_coeff">1</field>
+		</record>	
+		<record id="condition_for_manager_rate_12" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="sequence">12</field>
+			<field name="sale_type">domestic</field>
+			<field name="sale_margin_over">9</field>
+			<field name="sale_margin_upto">14</field>
+			<field name="commission_coeff">0.5</field>
+			<field name="accumulate_coeff">0.5</field>
+		</record>	
+		<record id="condition_for_manager_rate_13" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="sequence">13</field>
+			<field name="sale_type">domestic</field>
+			<field name="sale_margin_over">0</field>
+			<field name="sale_margin_upto">9</field>
+			<field name="commission_coeff">0</field>
+			<field name="accumulate_coeff">0</field>
+		</record>	
+		<!-- 1.2.2 Imported -->
+		<record id="condition_for_manager_rate_21" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="sequence">21</field>
+			<field name="sale_type">import</field>
+			<field name="sale_margin_over">19</field>
+			<field name="sale_margin_upto">1000</field>
+			<field name="commission_coeff">1</field>
+			<field name="accumulate_coeff">1</field>
+		</record>	
+		<record id="condition_for_manager_rate_22" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="sequence">22</field>
+			<field name="sale_type">import</field>
+			<field name="sale_margin_over">14</field>
+			<field name="sale_margin_upto">19</field>
+			<field name="commission_coeff">0.5</field>
+			<field name="accumulate_coeff">0.5</field>
+		</record>	
+		<record id="condition_for_manager_rate_23" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="sequence">23</field>
+			<field name="sale_type">import</field>
+			<field name="sale_margin_over">0</field>
+			<field name="sale_margin_upto">14</field>
+			<field name="commission_coeff">0</field>
+			<field name="accumulate_coeff">0</field>
+		</record>			
+		<!-- 1.2.3 Mixed -->
+		<record id="condition_for_manager_rate_31" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="sequence">31</field>
+			<field name="sale_type">mix</field>
+			<field name="sale_margin_over">20</field>
+			<field name="sale_margin_upto">1000</field>
+			<field name="commission_coeff">1</field>
+			<field name="accumulate_coeff">1</field>
+		</record>	
+		<record id="condition_for_manager_rate_32" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="sequence">32</field>
+			<field name="sale_type">mix</field>
+			<field name="sale_margin_over">15</field>
+			<field name="sale_margin_upto">20</field>
+			<field name="commission_coeff">0.5</field>
+			<field name="accumulate_coeff">0.5</field>
+		</record>	
+		<record id="condition_for_manager_rate_33" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_manager"/>
+			<field name="sequence">33</field>
+			<field name="sale_type">mix</field>
+			<field name="sale_margin_over">0</field>
+			<field name="sale_margin_upto">15</field>
+			<field name="commission_coeff">0</field>
+			<field name="accumulate_coeff">0</field>
+		</record>		
+
+		<!-- ========================================================= -->
+        
+		<!-- 2. Commission Rule for Sales Rep -->
+		<record id="commission_rule_for_sales_rep" model="commission.rule">
+			<field name="name">Commission Rule for Sales Rep</field>
+			<field name="type">percent_accumulate</field>
+		</record>
+		<!-- 2.1 Commission Rate -->
+		<record id="rule_for_sales_rep_rate_1" model="commission.rule.rate">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="amount_over">0</field>
+			<field name="amount_upto">500000</field>
+			<field name="percent_commission">1</field>
+		</record>
+		<record id="rule_for_sales_rep_rate_2" model="commission.rule.rate">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="amount_over">500000</field>
+			<field name="amount_upto">1000000</field>
+			<field name="percent_commission">1.5</field>
+		</record>
+		<record id="rule_for_sales_rep_rate_3" model="commission.rule.rate">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="amount_over">1000000</field>
+			<field name="amount_upto">1500000</field>
+			<field name="percent_commission">2</field>
+		</record>    
+		<record id="rule_for_sales_rep_rate_4" model="commission.rule.rate">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="amount_over">1500000</field>
+			<field name="amount_upto">999999999</field>
+			<field name="percent_commission">2.5</field>
+		</record>    
+		<!-- 2.2 Commission Condition -->
+		<!-- 2.2.1 Domestic -->
+		<record id="condition_for_sales_rep_rate_11" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="sequence">11</field>
+			<field name="sale_type">domestic</field>
+			<field name="sale_margin_over">14</field>
+			<field name="sale_margin_upto">1000</field>
+			<field name="commission_coeff">1</field>
+			<field name="accumulate_coeff">1</field>
+		</record>	
+		<record id="condition_for_sales_rep_rate_12" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="sequence">12</field>
+			<field name="sale_type">domestic</field>
+			<field name="sale_margin_over">9</field>
+			<field name="sale_margin_upto">14</field>
+			<field name="commission_coeff">0.5</field>
+			<field name="accumulate_coeff">0.5</field>
+		</record>	
+		<record id="condition_for_sales_rep_rate_13" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="sequence">13</field>
+			<field name="sale_type">domestic</field>
+			<field name="sale_margin_over">0</field>
+			<field name="sale_margin_upto">9</field>
+			<field name="commission_coeff">0</field>
+			<field name="accumulate_coeff">0</field>
+		</record>	
+		<!-- 2.2.2 Imported -->
+		<record id="condition_for_sales_rep_rate_21" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="sequence">21</field>
+			<field name="sale_type">import</field>
+			<field name="sale_margin_over">19</field>
+			<field name="sale_margin_upto">1000</field>
+			<field name="commission_coeff">1</field>
+			<field name="accumulate_coeff">1</field>
+		</record>	
+		<record id="condition_for_sales_rep_rate_22" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="sequence">22</field>
+			<field name="sale_type">import</field>
+			<field name="sale_margin_over">14</field>
+			<field name="sale_margin_upto">19</field>
+			<field name="commission_coeff">0.5</field>
+			<field name="accumulate_coeff">0.5</field>
+		</record>	
+		<record id="condition_for_sales_rep_rate_23" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="sequence">23</field>
+			<field name="sale_type">import</field>
+			<field name="sale_margin_over">0</field>
+			<field name="sale_margin_upto">14</field>
+			<field name="commission_coeff">0</field>
+			<field name="accumulate_coeff">0</field>
+		</record>			
+		<!-- 2.2.3 Mixed -->
+		<record id="condition_for_sales_rep_rate_31" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="sequence">31</field>
+			<field name="sale_type">mix</field>
+			<field name="sale_margin_over">20</field>
+			<field name="sale_margin_upto">1000</field>
+			<field name="commission_coeff">1</field>
+			<field name="accumulate_coeff">1</field>
+		</record>	
+		<record id="condition_for_sales_rep_rate_32" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="sequence">32</field>
+			<field name="sale_type">mix</field>
+			<field name="sale_margin_over">15</field>
+			<field name="sale_margin_upto">20</field>
+			<field name="commission_coeff">0.5</field>
+			<field name="accumulate_coeff">0.5</field>
+		</record>	
+		<record id="condition_for_sales_rep_rate_33" model="commission.rule.condition">
+            <field name="commission_rule_id" ref="commission_rule_for_sales_rep"/>
+			<field name="sequence">33</field>
+			<field name="sale_type">mix</field>
+			<field name="sale_margin_over">0</field>
+			<field name="sale_margin_upto">15</field>
+			<field name="commission_coeff">0</field>
+			<field name="accumulate_coeff">0</field>
+		</record>			
+
+		<!--
+		Permission
+		-->
+		<record model="ir.module.category" id="module_category_commission_management">
+            <field name="name">Commission</field>
+            <field name="description">Helps you calculation the commission</field>
+            <field name="sequence">50</field>
+        </record>
+        
+		<record id="group_commission_user" model="res.groups">
+        	<field name="name">User</field>
+        	<field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        	<field name="category_id" ref="module_category_commission_management"/>
+    	</record>
+
+		<record id="group_commission_Account" model="res.groups">
+        	<field name="name">Accounting</field>
+        	<field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        	<field name="category_id" ref="module_category_commission_management"/>
+    	</record>
+    	
+   		<record id="group_commission_manager" model="res.groups">
+        	<field name="name">Manager</field>
+        	<field name="category_id" ref="module_category_commission_management"/>
+        	<field name="implied_ids" eval="[(4, ref('group_commission_user'))]"/>
+        	<field name="users" eval="[(4, ref('base.user_root'))]"/>
+    	</record>
+	</data>
+</openerp>

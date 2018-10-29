@@ -1,0 +1,5 @@
+id,company_id/id,currency_id/id,name,type
+pricelist_purchase_thb,,base.THB,Purchase (THB),purchase
+pricelist_purchase_usd,,base.USD,Purchase (USD),purchase
+pricelist_purchase_gbp,,base.GBP,Purchase (GBP),purchase
+pricelist_purchase_eur,,base.EUR,Purchase (EUR),purchase

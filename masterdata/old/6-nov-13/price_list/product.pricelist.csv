@@ -1,0 +1,4 @@
+"id","company_id/id","currency_id","name","type"
+"pricelist_purchase_usd",,"USD","Purchase (USD)","purchase"
+"pricelist_purchase_gbp",,"GBP","Purchase (GBP)","purchase"
+"pricelist_purchase_eur",,"EUR","Purchase (EUR)","purchase"

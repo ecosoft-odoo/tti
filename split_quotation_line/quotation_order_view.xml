@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<record id="view_sales_order_line_filter_ext" model="ir.ui.view">
+            <field name="name">view.sales.order.line.filter.ext</field>
+            <field name="model">sale.order.line</field>
+            <field name="inherit_id" ref="sale.view_sales_order_line_filter" />
+            <field name="arch" type="xml">
+                <data>
+                	<xpath expr="//group/filter[@string='Product']" position="before">
+                		  <filter string="Customer" icon="terp-personal" domain="[]" context="{'group_by':'order_partner_id'}"/>
+         			</xpath>
+                </data>
+            </field>
+        </record>
+        
+    	<record id="view_order_line_tree_ext" model="ir.ui.view">
+            <field name="name">view.order.form.ext</field>
+            <field name="model">sale.order.line</field>
+            <field name="inherit_id" ref="sale.view_order_line_tree"/>           
+            <field name="arch" type="xml">
+                <data>		               
+		            <xpath expr="//tree[@string='Sales Order Lines']" position="attributes">
+		                <attribute name="create">false</attribute>
+		                <attribute name="edit">false</attribute>
+		                <attribute name="delete">false</attribute>               
+		            </xpath>				
+				</data>
+			</field>
+        </record>
+        
+    	        
+		<act_window id="action_view_quotation_line"
+            multi="True"
+            key2="client_action_multi" name="Split Quotation"
+            res_model="sale.order.line" src_model="sale.order"
+            view_id="view_order_line_tree_ext" 
+            context="{'Split_Quote':True}"            
+           	domain="[('order_id','in', active_ids),('state','=','draft')]" />
+	</data>
+</openerp>
