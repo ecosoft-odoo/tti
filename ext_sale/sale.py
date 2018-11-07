@@ -40,6 +40,21 @@ class sale_order(osv.osv):
                #'note': "Validity: 30 Days",
                }
 
+    def create(self, cr, uid, data, context=None):
+        # Search for default note, if not specified
+        if not data.get('note', False):
+            ir_values = self.pool.get('ir.values')
+            user_obj = self.pool.get('res.users')
+            user = user_obj.browse(cr, uid, uid, context=context)
+            company_id = user.company_id.id
+            condition = 'pricelist_id=' + str(data.get('pricelist_id', False))
+            note = ir_values.get_default(
+                cr, uid, 'sale.order', 'note', for_all_users=True,
+                company_id=company_id, condition=condition)
+            data.update({'note': note})
+        result = super(sale_order, self).create(cr, uid, data, context=context)
+        return result
+
     def action_button_confirm(self, cr, uid, ids, context=None):
         res = super(sale_order, self).action_button_confirm(cr, uid, ids, context)
         line_ids = self.pool.get('sale.order.line').search(cr, uid, [('order_id', 'in', ids), ('delivery_date', '=', False)])
