@@ -7,10 +7,10 @@
         auto="True"
         name="sale.order"
         rml="jrxml_reports/custom_reports/tt_sale_order.jrxml"
-        id="sale.report_sale_order" 
+        id="sale.report_sale_order"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="sale.report_sale_order" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
@@ -21,123 +21,138 @@
         auto="True"
         name="sale.material.list"
         rml="jrxml_reports/custom_reports/tt_sale_material_list.jrxml"
-        id="report_sale_material_list" 
+        id="report_sale_material_list"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="report_sale_material_list" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-       
+
     <report string="Purchase Order Form (TT)"
         model="purchase.order"
         auto="True"
         name="tt_purchase.order.form"
         rml="jrxml_reports/custom_reports/tt_purchase_order_form.jrxml"
-        id="tt_purchase_order_form" 
+        id="tt_purchase_order_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="tt_purchase_order_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-    
+
     <report string="Purchase Requisition Form (TT)"
         model="purchase.requisition"
         auto="True"
         name="tt_purchase.requisition.form"
         rml="jrxml_reports/custom_reports/tt_pr_order_form.jrxml"
-        id="tt_purchase_requisition_form" 
+        id="tt_purchase_requisition_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="tt_purchase_requisition_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-    
-    
+
+
     <report string="Payment Voucher Form (TT)"
         model="account.voucher"
         auto="True"
         name="tt.payment.voucher.form"
         rml="jrxml_reports/custom_reports/tt_payment_voucher_form.jrxml"
-        id="tt_payment_voucher_form" 
+        id="tt_payment_voucher_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="tt_payment_voucher_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-    
+
     <report string="Request for Quotation (TT)"
         model="purchase.order"
         auto="True"
         name="tt.request.purchase.form"
         rml="jrxml_reports/custom_reports/tt_request_quotation_form.jrxml"
-        id="tt_request_purchase_form" 
+        id="tt_request_purchase_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="tt_request_purchase_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-    
+
     <report string="Journal Voucher (TT)"
         model="account.move"
         auto="True"
         name="tt.account.move.form"
         rml="jrxml_reports/custom_reports/tt_journal_voucher_form.jrxml"
-        id="tt_journal_voucher_form" 
+        id="tt_journal_voucher_form"
         menu="True"
         header="False"
-        />    
+        />
     <record id="tt_journal_voucher_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-    
+
     <report string="Billing (TT)"
         model="account.billing"
         auto="True"
         name="tt.account.billling.form"
         rml="jrxml_reports/custom_reports/tt_billing.jrxml"
-        id="tt_account_billing_form" 
+        id="tt_account_billing_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="tt_account_billing_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-    
+
     <report string="Tax Invoice (TT)"
         model="account.invoice"
         auto="True"
         name="account.tax.form"
         rml="jrxml_reports/custom_reports/tt_tax_invoice.jrxml"
-        id="account_tax_form" 
+        id="account_tax_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="account_tax_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-    
+
+    <report string="Tax Invoice (PP)"
+        model="account.invoice"
+        auto="True"
+        name="account.tax.form2"
+        rml="jrxml_reports/custom_reports/tt_tax_invoice2.jrxml"
+        id="account_tax_form2"
+        menu="True"
+        header="False"
+        />
+    <record id="account_tax_form2" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+
+
     <report string="Receipt (TT)"
         model="account.invoice"
         auto="True"
         name="account.receipt.form"
         rml="jrxml_reports/custom_reports/tt_receipt_form.jrxml"
-        id="account_receive_form" 
+        id="account_receive_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="account_receive_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
@@ -148,24 +163,24 @@
         auto="True"
         name="account.performa.invoice"
         rml="jrxml_reports/custom_reports/tt_performa_invoice.jrxml"
-        id="account_performa_invoice_form" 
+        id="account_performa_invoice_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="account_performa_invoice_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-    
+
     <report string="Refund (TT)"
         model="account.invoice"
         auto="True"
         name="account.refund.form"
         rml="jrxml_reports/custom_reports/tt_tax_refund.jrxml"
-        id="account_refund_form" 
+        id="account_refund_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="account_refund_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
@@ -175,26 +190,26 @@
     <record id="group_report_to_excel" model="res.groups">
         	<field name="name">Form To Excel</field>
         	<field name="implied_ids" eval="[(4, ref('base.group_system'))]"/>
-        	<field name="comment">The user will have export form to excel.</field>	
+        	<field name="comment">The user will have export form to excel.</field>
    	</record>
-	-->    
-   		
+	-->
+
      <report string="Sales Material List (Excel)"
         model="sale.order"
         auto="True"
         name="sale.material.list.excel"
         rml="jrxml_reports/custom_reports/tt_sale_material_list_excel.jrxml"
-        id="report_sale_material_list_excel" 
+        id="report_sale_material_list_excel"
         menu="True"
-        header="False" 
+        header="False"
         groups='base.group_system'
-        />    
+        />
     <record id="report_sale_material_list_excel" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">xls</field>
     </record>
-    
-    
+
+
     <!--Hide Standard Report-->
     <report
             auto="False"
@@ -208,7 +223,7 @@
             usage="default"
             groups='base.group_system'
             />
-            
+
     <report id="purchase.report_purchase_order"
             name="purchase.order"
             string="Print Orders"
@@ -216,22 +231,22 @@
             rml="purchase_discount/report/order.rml"
             groups='base.group_system'
             />
-            
-   <report auto="False" id="purchase_requisition.report_purchase_requisition" 
-   			model="purchase.requisition" name="purchase.requisition" 
+
+   <report auto="False" id="purchase_requisition.report_purchase_requisition"
+   			model="purchase.requisition" name="purchase.requisition"
    			rml="purchase_requisition/report/purchase_requisition.rml" string="Purchase Requisition"
    			groups='base.group_system'/>
-   			
-  
+
+
     <report string="Credit Note (TT)"
         model="account.invoice"
         auto="True"
         name="account.credit.note.form"
         rml="jrxml_reports/custom_reports/tt_credit_note.jrxml"
-        id="account_credit_note_form" 
+        id="account_credit_note_form"
         menu="True"
-        header="False" 
-        />    
+        header="False"
+        />
     <record id="account_credit_note_form" model="ir.actions.report.xml">
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
