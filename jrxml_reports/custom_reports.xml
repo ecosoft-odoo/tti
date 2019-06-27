@@ -115,6 +115,20 @@
         <field name="jasper_output">pdf</field>
     </record>
 
+    <report string="PreForm Invoice"
+        model="account.invoice"
+        auto="True"
+        name="account.preform.invoice"
+        rml="jrxml_reports/custom_reports/tt_preform_invoice.jrxml"
+        id="account_preform_invoice"
+        menu="True"
+        header="False"
+        />
+    <record id="account_preform_invoice" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+
     <report string="Tax Invoice (TT)"
         model="account.invoice"
         auto="True"
@@ -128,21 +142,6 @@
         <field name="jasper_report">True</field>
         <field name="jasper_output">pdf</field>
     </record>
-
-    <report string="Tax Invoice (PP)"
-        model="account.invoice"
-        auto="True"
-        name="account.tax.form2"
-        rml="jrxml_reports/custom_reports/tt_tax_invoice2.jrxml"
-        id="account_tax_form2"
-        menu="True"
-        header="False"
-        />
-    <record id="account_tax_form2" model="ir.actions.report.xml">
-        <field name="jasper_report">True</field>
-        <field name="jasper_output">pdf</field>
-    </record>
-
 
     <report string="Receipt (TT)"
         model="account.invoice"
