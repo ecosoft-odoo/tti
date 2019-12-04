@@ -21,7 +21,7 @@
                 </form>
            </field>
         </record>
-        
+
         <record id="view_smargin_tree" model="ir.ui.view">
             <field name="name">sale.margin.master</field>
             <field name="model">sale.margin.master</field>
@@ -32,7 +32,7 @@
                 </tree>
             </field>
         </record>
-        
+
         <record id="view_smargin_search" model="ir.ui.view">
             <field name="name">sale.margin.master</field>
             <field name="model">sale.margin.master</field>
@@ -82,8 +82,8 @@
                     <field name="state"/>
                 </tree>
             </field>
-        </record>	  
-	
+        </record>
+
 	    <record id="view_pq_graph" model="ir.ui.view">
 	         <field name="name">sale.prequotation.graph</field>
 	         <field name="model">sale.prequotation</field>
@@ -95,7 +95,7 @@
 	             </graph>
 	         </field>
 	    </record>
-        
+
         <record id="view_preq_search" model="ir.ui.view">
             <field name="name">sale.prequotation.search</field>
             <field name="model">sale.prequotation</field>
@@ -133,8 +133,8 @@
                         <button name="action_button_cancel" states="draft,confirm" string="Cancel" type="object" groups="base.group_user"/>
                         <button name="%(action_calcsheet_quotation)d" type="action" string="Create Quotation" class="oe_highlight" groups="base.group_sale_salesman"
                                attrs="{'invisible':['|', '&amp;', ('amount_material_sale','=',0), ('amount_labour_sale','=',0), ('state','!=','confirm')]}"
-                               context="{'order_line': order_line, 'order_line_labour': order_line_labour}"/>                       
-                        <!--button name="action_split_quotion"  class="oe_highlight" string="Create Split Quotation" attrs="{'invisible':['|',('amount_material_sale','=',0),'|',('amount_labour_sale','=',0),('state','!=','confirm')]}" type="object" groups="sale_prequotation.group_calculation_sheet_user" /-->  
+                               context="{'order_line': order_line, 'order_line_labour': order_line_labour}"/>
+                        <!--button name="action_split_quotion"  class="oe_highlight" string="Create Split Quotation" attrs="{'invisible':['|',('amount_material_sale','=',0),'|',('amount_labour_sale','=',0),('state','!=','confirm')]}" type="object" groups="sale_prequotation.group_calculation_sheet_user" /-->
                         <button name="action_button_draft" states="cancel" string="Reset to Draft" type="object" groups="base.group_user"/>
                         <field name="state" widget="statusbar"/>
                 </header>
@@ -145,27 +145,27 @@
 	                    <div class="oe_right oe_button_box">
 	                        <label string="Not Used" />
 	                        <field name="not_used"/>
-	                    </div> 
+	                    </div>
                     </h1>
-                    <!--field name="split_flag"/>	
-                    <label string="Split Material/Labour Quotation"  /--> 
+                    <!--field name="split_flag"/>
+                    <label string="Split Material/Labour Quotation"  /-->
                     <group>
                         <group>
                         	<field name="type"/>
                         	<field name="project_name"/>
-                            <field name="partner_id"  context="{'search_default_customer':1, 'show_address': 1}" 
+                            <field name="partner_id"  context="{'search_default_customer':1, 'show_address': 1}"
                             	on_change="onchange_partner_id(partner_id)"
                             	options="{'limit': 10, 'create': false, 'create_edit': false, 'always_reload': True}"/>
-                            <!--field name="partner_contact_id" context="{'default_type':'contact'}"/-->   
-                            <field name="cal_date" string="Exchange Rate Date" on_change="on_change_caldate(cal_date)"/>                        
+                            <!--field name="partner_contact_id" context="{'default_type':'contact'}"/-->
+                            <field name="cal_date" string="Exchange Rate Date" on_change="on_change_caldate(cal_date)"/>
 							<field name="import_tax" invisible="1"/>
                         </group>
-                        <group>               	    	
+                        <group>
                             <field name="date_pq"/>
                             <field name="currency_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
                             <!--field name="sale_date"/-->
                             <field name="overall_product_type"/>
-                            <field name="user_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/> 
+                            <field name="user_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
                             <field name="mat_sale_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
                             <field name="labour_sale_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
                             <field name="doc_version"/>
@@ -180,14 +180,14 @@
                         <group string="Sales Price">
                             <field name="amount_material_sale" groups="base.group_sale_salesman" widget='monetary' options="{'currency_field': 'currency_id'}"/>
                             <field name="amount_labour_sale" groups="base.group_sale_salesman" widget='monetary' options="{'currency_field': 'currency_id'}"/>
-                            <field name="amount_unforeseen" groups="base.group_sale_salesman" widget='monetary' options="{'currency_field': 'currency_id'}"/>                        
-                            <field name="amount_sale_total" groups="base.group_sale_salesman" widget='monetary' options="{'currency_field': 'currency_id'}"/>                            	
+                            <field name="amount_unforeseen" groups="base.group_sale_salesman" widget='monetary' options="{'currency_field': 'currency_id'}"/>
+                            <field name="amount_sale_total" groups="base.group_sale_salesman" widget='monetary' options="{'currency_field': 'currency_id'}"/>
                             <h2><label for="acct_margin_percent" invisible="1"/></h2>
-                        	<h2><field name="acct_margin_percent" invisible="1" nolabel="1" class="oe_right"/></h2>  
+                        	<h2><field name="acct_margin_percent" invisible="1" nolabel="1" class="oe_right"/></h2>
                             <h2><label for="margin_percent" groups="base.group_sale_salesman"/></h2>
-                        	<h2><field name="margin_percent" groups="base.group_sale_salesman" nolabel="1" class="oe_right"/></h2>  
-                        	<h2><field name="acct_margin"  invisible="1" widget='monetary' nolabel="1" options="{'currency_field': 'currency_id'}" class="oe_right"/></h2>  
-                        	<h2><field name="margin"  invisible="1" widget='monetary' nolabel="1" options="{'currency_field': 'currency_id'}" class="oe_right"/></h2>  
+                        	<h2><field name="margin_percent" groups="base.group_sale_salesman" nolabel="1" class="oe_right"/></h2>
+                        	<h2><field name="acct_margin"  invisible="1" widget='monetary' nolabel="1" options="{'currency_field': 'currency_id'}" class="oe_right"/></h2>
+                        	<h2><field name="margin"  invisible="1" widget='monetary' nolabel="1" options="{'currency_field': 'currency_id'}" class="oe_right"/></h2>
                         </group>
                     </group>
                     <notebook>
@@ -202,7 +202,7 @@
                                     		<field name="partner_id" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" options="{'limit': 10, 'create': false, 'create_edit': false}" domain="[('supplier','=',True)]" on_change="partner_id_change(product_id,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>
                                     		<field name="product_uom_qty" on_change="onchange_product_uom_qty(product_id, product_uom_qty, product_uom,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)" />
                                     		<field name="product_uom" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
-	                                   		<field name="cost_price_unit" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />                                    	
+	                                   		<field name="cost_price_unit" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />
                                     		<field name="discount" invisible="1"/> <!-- we change to use net amount, discount no longer use -->
                                     	</group>
                                     	<group>
@@ -218,9 +218,9 @@
                                     		<field name="import_tax" groups="base.group_sale_manager" />
                                     		<field name="price_unit" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />
                                     		<field name="price_unit_sale" groups="base.group_sale_salesman" />
-                                    		
+
                                     	</group>
-                                    	<group>                                   
+                                    	<group>
                                     		<field name="profit_total" groups="base.group_sale_manager"  />
                                     		<field name="transport_total" groups="base.group_sale_manager" />
                                     		<field name="insurance_total" groups="base.group_sale_manager" />
@@ -230,34 +230,35 @@
                                     	</group>
                                 	</group>
                                 </form>
-                                <tree string="Calculation Area MATERIALS">                              
+                                <tree string="Calculation Area MATERIALS">
+                                    <field name="sequence" widget="handle"/>
                                     <field name="partner_id" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" options="{'limit': 10, 'create': false, 'create_edit': false}" domain="[('supplier','=',True)]" on_change="partner_id_change(product_id,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>
                                     <field name="category_id"  invisible="1" options="{'limit': 10, 'create': false, 'create_edit': false}" on_change="onchange_product_category(category_id,context)"/>
                                     <field name="product_id" options="{'limit': 10, 'create': false, 'create_edit': false}" on_change="onchange_product_id(product_id, product_uom_qty, product_uom,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>
-                                    <field name="product_uom_qty" on_change="onchange_product_uom_qty(product_id, product_uom_qty, product_uom,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)" />
+                                    <field name="product_uom_qty" on_change="onchange_product_uom_qty(product_id, product_uom_qty, product_uom,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>
                                     <field name="product_uom" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
                                     <field name="currency_id" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
-                                    <field name="cost_price_unit" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager"  />  
+                                    <field name="cost_price_unit" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager"/>
                                     <field name="discount" invisible="1" sum="Total Discount" /> <!-- we change to use net amount, discount no longer use -->
-                                    <field name="price_unit" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />        
-                                    <field name="price_unit_total" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager"  sum="Total Cost"/>                                  
-                                    <field name="profit" groups="base.group_sale_manager"  sum="Total Profit"/>
+                                    <field name="price_unit" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager"/>
+                                    <field name="price_unit_total" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" sum="Total Cost"/>
+                                    <field name="profit" groups="base.group_sale_manager" sum="Total Profit"/>
                                     <field name="transport" groups="base.group_sale_manager" sum="Total Transport"/>
                                     <field name="insurance" groups="base.group_sale_manager" sum="Total Insurance"/>
-                                    <field name="import_tax" groups="base.group_sale_manager" sum="Total Import Tax"/>                                                                      
-                                    <field name="price_unit_sale" groups="base.group_sale_salesman" />
+                                    <field name="import_tax" groups="base.group_sale_manager" sum="Total Import Tax"/>
+                                    <field name="price_unit_sale" groups="base.group_sale_salesman"/>
                                     <field name="price_unit_sale_total" groups="base.group_sale_salesman" sum="Total Price Selling"/>
                                 </tree>
                             </field>
                         <separator colspan="4" string="Calculation Area LABOUR"/>
                             <field name="order_line_labour" string="Calculation Area LABOUR" >
                                 <form string="Calculation Area LABOUR">
-                                	<group> 
-                                		<group> 
+                                	<group>
+                                		<group>
                                 			<field name="labour_category_id" invisible="1" />
                                 			<field name="category_id" options="{'limit': 10, 'create': false, 'create_edit': false}" on_change="onchange_product_category(labour_category_id,category_id,context)"/>
-                                			<field name="product_id" options="{'limit': 10, 'create': false, 'create_edit': false}" on_change="onchange_product_id(product_id, product_uom_qty, product_uom,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>  
-                                			<field name="partner_id" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" options="{'limit': 10, 'create': false, 'create_edit': false}" domain="[('supplier','=',True)]" on_change="partner_id_change(product_id,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>                                 		                             
+                                			<field name="product_id" options="{'limit': 10, 'create': false, 'create_edit': false}" on_change="onchange_product_id(product_id, product_uom_qty, product_uom,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>
+                                			<field name="partner_id" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" options="{'limit': 10, 'create': false, 'create_edit': false}" domain="[('supplier','=',True)]" on_change="partner_id_change(product_id,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>
                                     		<field name="product_uom_qty"/>
                                     		<field name="cost_price_unit" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />
                                     	</group>
@@ -271,7 +272,7 @@
                                     		<field name="price_unit" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />
                                     		<field name="price_unit_sale" groups="base.group_sale_salesman" />
                                     	</group>
-                                    	<group>                                   		
+                                    	<group>
                                     		<field name="profit_total" groups="base.group_sale_manager" />
                                     		<field name="price_unit_total" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />
                                     		<field name="price_unit_sale_total" groups="base.group_sale_salesman" />
@@ -281,7 +282,7 @@
                                 <tree string="Calculation Area LABOUR">
                                 	<field name="partner_id"  groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" options="{'limit': 10, 'create': false, 'create_edit': false}" domain="[('supplier','=',True)]" on_change="partner_id_change(product_id,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>
                                 	<field name="category_id" invisible="1" options="{'limit': 10, 'create': false, 'create_edit': false}" domain="[('type','=','service')]"/>
-                                    <field name="product_id" options="{'limit': 10, 'create': false, 'create_edit': false}" on_change="onchange_product_id(product_id, product_uom_qty, product_uom,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>                                                                       
+                                    <field name="product_id" options="{'limit': 10, 'create': false, 'create_edit': false}" on_change="onchange_product_id(product_id, product_uom_qty, product_uom,partner_id,parent.currency_id,parent.cal_date,parent.import_tax)"/>
                                     <field name="name"/>
                                     <field name="product_uom_qty" />
                                     <field name="product_uom" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
@@ -289,7 +290,7 @@
                                     <field name="cost_price_unit"  groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />
 									<field name="price_unit"  groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />
                                     <field name="price_unit_total" sum="Total Cost" groups="sale_prequotation.group_sale_engineer,base.group_sale_manager" />
-                                    <field name="profit" groups="base.group_sale_manager"  sum="Total profit"/>                                    
+                                    <field name="profit" groups="base.group_sale_manager"  sum="Total profit"/>
                                     <field name="price_unit_sale" groups="base.group_sale_salesman"  />
                                     <field name="price_unit_sale_total" groups="base.group_sale_salesman"  sum="Total Price Selling"/>
                                 </tree>
@@ -349,7 +350,7 @@
         </record>
         <menuitem action="action_pq" id="menu_pq" parent="base.menu_sales" sequence="3" groups="base.group_sale_salesman,base.group_sale_manager"/>
 
-        
+
         <!-- Sale Prequotation Tax Rule -->
         <record id="view_sale_prequotation_tax_rule" model="ir.ui.view">
             <field name="model">sale.prequotation.tax.rule</field>
@@ -369,10 +370,10 @@
             <field name="view_type">form</field>
             <field name="view_id" ref="view_sale_prequotation_tax_rule"/>
         </record>
-        
+
         <menuitem action="action_sale_prequotation_tax_rule"
             id="menu_sale_prequotation_tax_rule" sequence="14"
-            parent="base.menu_base_config" groups="base.group_sale_manager"/>        
-        
+            parent="base.menu_base_config" groups="base.group_sale_manager"/>
+
     </data>
 </openerp>
