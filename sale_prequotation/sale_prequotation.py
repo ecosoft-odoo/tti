@@ -36,7 +36,7 @@ def get_product_supplier_list(cr, uid, product_id, context=None):
     supplier_list = []
     cr.execute("""
         select name from product_supplierinfo psi
-        join product_product pp on product_tmpl_id = psi.product_id 
+        join product_product pp on product_tmpl_id = psi.product_id
         where pp.id = %s
         order by sequence
     """, (product_id,))
@@ -132,6 +132,7 @@ class sale_prequotation(osv.osv):
             'doc_version': 0,
             'mat_sale_no': False,
             'labour_sale_no': False,
+            'pq_history_ids': False,
             'name': self.pool.get('ir.sequence').get(cr, uid, 'sale.prequotation') or '/',
         })
         return super(sale_prequotation, self).copy(cr, uid, id, default, context=context)
@@ -288,8 +289,9 @@ class sale_prequotation(osv.osv):
     _columns = {
         'name': fields.char('Calc Sheet Number', size=64, required=True,
             readonly=True, states={'draft': [('readonly', False)]}, select=True),
-        'date_pq': fields.date('Calc sheet Date', required=True, readonly=True, select=True, 
+        'date_pq': fields.date('Calc sheet Date', required=True, readonly=True, select=True,
                                states={'draft': [('readonly', False)]}, track_visibility='always'),
+        'pq_id': fields.many2one('sale.prequotation', 'PreQuotation Reference'),
         'state': fields.selection([
             ('draft', 'Draft'),
             ('cancel', 'Cancelled'),
@@ -298,10 +300,11 @@ class sale_prequotation(osv.osv):
             ], 'Status', readonly=True,
              select=True, track_visibility='always',),
         'partner_id': fields.many2one('res.partner', 'Customer', domain=[('customer', '=', True), ('is_company', '=', True)], required=False, readonly=True,
-                                      states={'draft': [('readonly', False)], 'confirm': [('readonly', False), ('required', True)]}, 
+                                      states={'draft': [('readonly', False)], 'confirm': [('readonly', False), ('required', True)]},
                                       select=True, track_visibility='always'),
         #'partner_contact_id': fields.char('Contact Person Customer', size=128, required=False, states={'confirm': [('required', True)]}),
         'sale_ids': fields.one2many('sale.order', 'pq_id', 'Calculation Sheet', readonly=True),
+        'pq_history_ids': fields.one2many('sale.prequotation', 'pq_id', 'PQ History'),
         'split_flag': fields.boolean(string='Split Material/Labour Quotation',),
         'mat_sale_id': fields.many2one('sale.order', 'Quote Ref of Material', readonly=True),
         'labour_sale_id': fields.many2one('sale.order', 'Quote Ref of Labour', readonly=True),
@@ -334,6 +337,7 @@ class sale_prequotation(osv.osv):
         'order_line': fields.one2many('sale.prequotation.product', 'pq_id', 'Calculation Area MATERIALS', readonly=True, states={'draft': [('readonly', False)], 'confirm': [('readonly', False)]}),
         'order_line_labour': fields.one2many('sale.prequotation.labour', 'pq_id', 'Calculation Area LABOUR', readonly=True, states={'draft': [('readonly', False)], 'confirm': [('readonly', False)]}),
         'doc_version': fields.integer('Version', required=True, readonly=True,),
+        'pq_version': fields.integer('PQ Reversion', required=True, readonly=True,),
         'amount_material_cost': fields.function(_amount_all, digits_compute=dp.get_precision('Account'), string='Total Material Cost', track_visibility='always',
             store={
                 'sale.prequotation': (lambda self, cr, uid, ids, c={}: ids, [], 20),
@@ -360,7 +364,7 @@ class sale_prequotation(osv.osv):
             multi='all'),
         'percent_unforeseen': fields.float('Unforeseen (%)', digits_compute=dp.get_precision('Account'), readonly=True,
                                         states={'draft': [('readonly', False)]}, track_visibility='always',),
-        'customer_commission': fields.float('Customer Commission', digits_compute=dp.get_precision('Account'), readonly=True, 
+        'customer_commission': fields.float('Customer Commission', digits_compute=dp.get_precision('Account'), readonly=True,
                                         states={'draft': [('readonly', False)], 'confirm': [('readonly', False)]}, track_visibility='always'),
         'amount_unforeseen': fields.function(_amount_all, digits_compute=dp.get_precision('Account'), string='Total Unforeseen',
             store={
@@ -451,6 +455,7 @@ class sale_prequotation(osv.osv):
         'name': '/',
         'overall_product_type': 'domestic',
         'doc_version': 0,
+        'pq_version': 1,
         'mat_sale_no': False,
         'labour_sale_no': False,
     }
@@ -868,6 +873,25 @@ class sale_prequotation(osv.osv):
         result = act_obj.read(cr, uid, [id], context=context)[0]
         result['domain'] = "[('id','in', [" + ','.join(map(str, quote_ids)) + "])]"
         return result
+
+    def action_new_pq_version(self, cr, uid, ids, context=None):
+        for prequote in self.browse(cr, uid, ids, context=context):
+            new_pq_id = self.copy(cr, uid, prequote.id, context=context)
+            self.write(cr, uid, [new_pq_id], {
+                'name': prequote.name + '-' + NUMBER_TO_CHAR[prequote.pq_version],
+                'pq_id': prequote.id,
+                'date_pq': prequote.date_pq,
+                'cal_date': prequote.cal_date,
+                'mat_sale_id': prequote.mat_sale_id.id,
+                'labour_sale_id': prequote.labour_sale_id.id,
+                'mat_sale_no': prequote.mat_sale_no,
+                'labour_sale_no': prequote.labour_sale_no,
+                'doc_version': prequote.doc_version,
+                'state': 'cancel',
+            }, context)
+            self.write(cr, uid, [prequote.id], {
+                'pq_version': prequote.pq_version + 1,
+            }, context)
 
     def unlink(self, cr, uid, ids, context=None):
         if context is None:

@@ -134,7 +134,9 @@
                         <button name="%(action_calcsheet_quotation)d" type="action" string="Create Quotation" class="oe_highlight" groups="base.group_sale_salesman"
                                attrs="{'invisible':['|', '&amp;', ('amount_material_sale','=',0), ('amount_labour_sale','=',0), ('state','!=','confirm')]}"
                                context="{'order_line': order_line, 'order_line_labour': order_line_labour}"/>
-                        <!--button name="action_split_quotion"  class="oe_highlight" string="Create Split Quotation" attrs="{'invisible':['|',('amount_material_sale','=',0),'|',('amount_labour_sale','=',0),('state','!=','confirm')]}" type="object" groups="sale_prequotation.group_calculation_sheet_user" /-->
+                        <button name="action_new_pq_version" type="object" string="New PQ Version" class="oe_highlight" groups="base.group_sale_salesman"
+                               attrs="{'invisible':[('state','!=','confirm')]}"/>
+                        <!-- button name="action_split_quotion"  class="oe_highlight" string="Create Split Quotation" attrs="{'invisible':['|',('amount_material_sale','=',0),'|',('amount_labour_sale','=',0),('state','!=','confirm')]}" type="object" groups="sale_prequotation.group_calculation_sheet_user" / -->
                         <button name="action_button_draft" states="cancel" string="Reset to Draft" type="object" groups="base.group_user"/>
                         <field name="state" widget="statusbar"/>
                 </header>
@@ -169,6 +171,7 @@
                             <field name="mat_sale_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
                             <field name="labour_sale_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
                             <field name="doc_version"/>
+                            <field name="pq_version"/>
                         </group>
                         <group string="Cost Price">
                             <field name="amount_material_cost" groups="base.group_sale_manager" widget='monetary' options="{'currency_field': 'currency_id'}"/>
@@ -312,6 +315,16 @@
                         <page string="Quote History">
                             <group>
                                 <field name="sale_ids" nolabel="1">
+                                	<tree string="Margins" create="false">
+                                		 <field name="name"/>
+                    				 	 <field name="state"/>
+                    				</tree>
+                    			</field>
+                            </group>
+                        </page>
+                        <page string="PQ History">
+                            <group>
+                                <field name="pq_history_ids" nolabel="1">
                                 	<tree string="Margins" create="false">
                                 		 <field name="name"/>
                     				 	 <field name="state"/>
