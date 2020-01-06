@@ -324,7 +324,7 @@
                         </page>
                         <page string="PQ History">
                             <group>
-                                <field name="pq_history_line" nolabel="1">
+                                <field name="pq_history_ids" nolabel="1">
                                 	<tree string="Margins" create="false">
                                 		 <field name="name"/>
                     				 	 <field name="state"/>

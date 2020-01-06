@@ -132,6 +132,7 @@ class sale_prequotation(osv.osv):
             'doc_version': 0,
             'mat_sale_no': False,
             'labour_sale_no': False,
+            'pq_history_ids': False,
             'name': self.pool.get('ir.sequence').get(cr, uid, 'sale.prequotation') or '/',
         })
         return super(sale_prequotation, self).copy(cr, uid, id, default, context=context)
@@ -303,7 +304,7 @@ class sale_prequotation(osv.osv):
                                       select=True, track_visibility='always'),
         #'partner_contact_id': fields.char('Contact Person Customer', size=128, required=False, states={'confirm': [('required', True)]}),
         'sale_ids': fields.one2many('sale.order', 'pq_id', 'Calculation Sheet', readonly=True),
-        'pq_history_line': fields.one2many('sale.prequotation', 'pq_id', 'PQ History'),
+        'pq_history_ids': fields.one2many('sale.prequotation', 'pq_id', 'PQ History'),
         'split_flag': fields.boolean(string='Split Material/Labour Quotation',),
         'mat_sale_id': fields.many2one('sale.order', 'Quote Ref of Material', readonly=True),
         'labour_sale_id': fields.many2one('sale.order', 'Quote Ref of Labour', readonly=True),
@@ -874,74 +875,21 @@ class sale_prequotation(osv.osv):
         return result
 
     def action_new_pq_version(self, cr, uid, ids, context=None):
-        pq = self.pool.get('sale.prequotation')
-        pq_product = self.pool.get('sale.prequotation.product')
-        pq_labour = self.pool.get('sale.prequotation.labour')
-        margin = self.pool.get('sale.profit.margin')
         for prequote in self.browse(cr, uid, ids, context=context):
-            vals = {
+            new_pq_id = self.copy(cr, uid, prequote.id, context=context)
+            self.write(cr, uid, [new_pq_id], {
                 'name': prequote.name + '-' + NUMBER_TO_CHAR[prequote.pq_version],
-                'project_name': prequote.project_name,
-                'partner_id': prequote.partner_id.id,
+                'pq_id': prequote.id,
                 'date_pq': prequote.date_pq,
                 'cal_date': prequote.cal_date,
-                'user_id': uid,
-                'overwrite_uom': prequote.overwrite_uom,
-                'overall_product_type': prequote.overall_product_type,
                 'mat_sale_id': prequote.mat_sale_id.id,
                 'labour_sale_id': prequote.labour_sale_id.id,
                 'mat_sale_no': prequote.mat_sale_no,
                 'labour_sale_no': prequote.labour_sale_no,
                 'doc_version': prequote.doc_version,
-                'pq_version': prequote.pq_version,
-                'pq_id': prequote.id,
-                'customer_commission': prequote.customer_commission,
-                'percent_unforeseen': prequote.percent_unforeseen,
-            }
-            pq_older = pq.create(cr, uid, vals, context=context)
-            for lines in prequote.order_line_labour:
-                vals = {
-                    'pq_id': pq_older,
-                    'partner_id': lines.partner_id.id,
-                    'category_id': lines.category_id.id,
-                    'name': lines.name,
-                    'product_id': lines.product_id.id,
-                    'product_uom_qty': lines.product_uom_qty,
-                    'product_uom': lines.product_uom.id,
-                    'currency_id': lines.currency_id.id,
-                    'cost_price_unit': lines.cost_price_unit,
-                    'profit': lines.profit,
-                }
-                pq_labour.create(cr, uid, vals, context=context)
-            for margins in prequote.margins:
-                vals = {
-                    'prequote_id': pq_older,
-                    'margin_id': margins.margin_id.id,
-                    'percentage': margins.percentage,
-                    'name': margins.name,
-                }
-                margin.create(cr, uid, vals, context=context)
-            for lines in prequote.order_line:
-                vals = {
-                    'pq_id': pq_older,
-                    'partner_id': lines.partner_id.id,
-                    'category_id': lines.category_id.id,
-                    'name': lines.name,
-                    'type': lines.type,
-                    'product_id': lines.product_id.id,
-                    'product_uom_qty': lines.product_uom_qty,
-                    'product_uom': lines.product_uom.id,
-                    'currency_id': lines.currency_id.id,
-                    'percentage': lines.percentage,
-                    'cost_price_unit': lines.cost_price_unit,
-                    'discount': lines.discount,
-                    'profit': lines.profit,
-                    'insurance': lines.insurance,
-                    'transport': lines.transport,
-                }
-                pq_product.create(cr, uid, vals, context=context)
-            pq.write(cr, uid, [pq_older], {'state': 'cancel'}, context)
-            self.write(cr, uid, ids, {
+                'state': 'cancel',
+            }, context)
+            self.write(cr, uid, [prequote.id], {
                 'pq_version': prequote.pq_version + 1,
             }, context)
 
