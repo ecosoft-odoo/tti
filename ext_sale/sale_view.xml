@@ -6,99 +6,99 @@
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">
-                <data>	
-	                <field name="project_id" position="after" version="7.0">					
+                <data>
+	                <field name="project_id" position="after" version="7.0">
 						<field name="ref_attention_name" invisible="1"/> <!-- not use -->
 						<field name="ref_contact2_id" /> <!-- not use -->
 					</field>
 
-	                <button name="copy_quotation" position="attributes" version="7.0">					
-						<attribute name="invisible">True</attribute> 
-					</button>		
-					
+	                <button name="copy_quotation" position="attributes" version="7.0">
+						<attribute name="invisible">True</attribute>
+					</button>
+
 					<xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/tree" position="attributes">
 						<attribute name="create">0</attribute>
-					</xpath>							 
-					
+					</xpath>
+
 					<xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/tree/field[@name='name']" position="after">
 						<field name="delivery_date" required="1" />
 						<field name="expected_delivery_date" required="1" on_change="onchange_expected_delivery_date(parent.date_order, delay, expected_delivery_date)"/>
 						<field name="delay" required="1" on_change="onchange_delay(parent.date_order, delay, expected_delivery_date)"/>
-						<field name="pq_id" invisible="1"/> 
+						<field name="pq_id" invisible="1"/>
 					</xpath>
-					
+
 					<xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/form/group/group/field[@name='product_id']" position="after">
-						<field name="delivery_date" required="1" /> 
-						<field name="pq_id" invisible="1"/> 
+						<field name="delivery_date" required="1" />
+						<field name="pq_id" invisible="1"/>
 					</xpath>
-					
+
 					<xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/tree/field[@name='product_id']" position="attributes">
 						<attribute name="attrs">{'readonly': [('pq_id','!=',False)]}</attribute>
 					</xpath>
-					
+
 					<xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/tree/field[@name='product_uom']" position="attributes">
 						<attribute name="attrs">{'readonly': [('pq_id','!=',False)]}</attribute>
 					</xpath>
-					
+
 					<xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/tree/field[@name='product_uom_qty']" position="attributes">
 						<attribute name="attrs">{'readonly': [('pq_id','!=',False)]}</attribute>
 					</xpath>
 					 <field name="shop_id" position="after" version="7.0">
 						<field name="old_quote_number"/>
 	                </field>
-					
+
 					<!-- Security, only allow Accountant to see Create Invoice-->
                     <button name="%(sale.action_view_sale_advance_payment_inv)d" position="attributes">
 					    <attribute name="groups">account.group_account_invoice</attribute>
 					</button>
-					
+
 					<!-- Invoice and Delivery Address, ('type','=','invoice'), ('type','=','delivery') -->
                     <xpath expr="/form/sheet/group/group/field[@name='partner_invoice_id']" position="attributes">
                     	<attribute name="domain">[('customer','=',True), ('parent_id','=',partner_id)]</attribute>
                     </xpath>
                     <xpath expr="/form/sheet/group/group/field[@name='partner_shipping_id']" position="attributes">
                     	<attribute name="domain">[('customer','=',True), ('parent_id','=',partner_id)]</attribute>
-                    </xpath>  				
+                    </xpath>
             	</data>
 			</field>
         </record>
-        
+
 
         <record id="view_order_form_inherit_ext" model="ir.ui.view">
             <field name="name">view.order.form.inherit.ext</field>
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale_stock.view_order_form_inherit"/>
             <field name="arch" type="xml">
-                <data>	
-					<xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/form//field[@name='delay']" position="replace">
-						<field name="delay" class="oe_inline" required="1" on_change="onchange_delay(parent.date_order, delay, expected_delivery_date)"/>
-					</xpath>			
-					<xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/form//label[@for='delay']" position="before">
-						<field name="expected_delivery_date" required="1" on_change="onchange_expected_delivery_date(parent.date_order, delay, expected_delivery_date)"/>
-					</xpath>			
-            	</data>
-			</field>
-        </record>        
-        
-        
+                <data>
+					          <xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/form//field[@name='delay']" position="replace">
+						            <field name="delay" class="oe_inline" required="1" on_change="onchange_delay(parent.date_order, delay, expected_delivery_date)"/>
+					          </xpath>
+					          <xpath expr="/form/sheet/notebook/page[@string='Order Lines']/field[@name='order_line']/form//label[@for='delay']" position="before">
+						            <field name="expected_delivery_date" required="1" on_change="onchange_expected_delivery_date(parent.date_order, delay, expected_delivery_date)"/>
+					          </xpath>
+                </data>
+			       </field>
+        </record>
+
+
         <record id="view_order_tree_ext" model="ir.ui.view">
             <field name="name">view.order.tree.ext</field>
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order_tree"/>
             <field name="arch" type="xml">
-                <data>	
-	                <field name="state" position="before" version="7.0">					
-						<field name="invoiced" /> 				
-						<field name="shipped" /> 
-					</field>
-	                <field name="amount_total" position="before" version="7.0">					
-						<field name="amount_untaxed" /> 				
-						<field name="amount_net" /> 	
-					</field>
-				</data>
+                <data>
+	                  <field name="state" position="before" version="7.0">
+						            <field name="invoiced"/>
+						            <field name="shipped"/>
+					          </field>
+	                  <field name="amount_total" position="before" version="7.0">
+						            <field name="amount_untaxed"/>
+						            <field name="amount_net"/>
+					          </field>
+				        </data>
             </field>
-        </record>       
-        
+        </record>
+
 
     	<record id="view_sales_order_filter_ext" model="ir.ui.view">
             <field name="name">view.sales.order.filter.ext</field>
@@ -111,11 +111,25 @@
                         <filter string="PQ Type" domain="[]" context="{'group_by':'pq_type'}"/>
                         <filter string="Pricelist" domain="[]" context="{'group_by':'pricelist_id'}"/>
                 	</filter>
-				</data> 
+				        </data>
             </field>
        </record>
-        
-        					
+
+       <record id="view_order_product_search" model="ir.ui.view">
+           <field name="name">sale.report.search</field>
+           <field name="model">sale.report</field>
+           <field name="inherit_id" ref="sale.view_order_product_search"/>
+           <field name="arch" type="xml">
+                <data>
+                    <field name="categ_id" position="after">
+                        <field name="brand_id"/>
+                    </field>
+                    <filter string="Product" position="after">
+                        <filter string="Brand" name="brand_id" context="{'group_by': 'brand_id'}"/>
+                    </filter>
+                </data>
+           </field>
+       </record>
 
 	</data>
 </openerp>
