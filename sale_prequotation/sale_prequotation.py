@@ -286,11 +286,21 @@ class sale_prequotation(osv.osv):
         c = self.pool.get('res.users').browse(cr, uid, uid, context=context).company_id.currency_id.id
         return c
 
+    def _get_year_pq(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for pq in self.browse(cr, uid, ids, context=context):
+            res[pq.id] = pq.date_pq.split('-')[0]
+        return res
+
     _columns = {
         'name': fields.char('Calc Sheet Number', size=64, required=True,
             readonly=True, states={'draft': [('readonly', False)]}, select=True),
         'date_pq': fields.date('Calc sheet Date', required=True, readonly=True, select=True,
                                states={'draft': [('readonly', False)]}, track_visibility='always'),
+        'year_pq': fields.function(_get_year_pq, type='char', string='Years',
+            store={
+                'sale.prequotation': (lambda self, cr, uid, ids, c={}: ids, [], 4),
+                }),
         'pq_id': fields.many2one('sale.prequotation', 'PreQuotation Reference'),
         'state': fields.selection([
             ('draft', 'Draft'),
