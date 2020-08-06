@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
     <data>
-        
+
     	<!-- Product Brand -->
         <record id="product_brand_form_view" model="ir.ui.view">
             <field name="name">product.brand.form.view</field>
@@ -14,8 +14,8 @@
 	                    </group>
 	                    <group>
 	                        <field name="active"/>
-	                    </group>                    
-					</group>                
+	                    </group>
+					</group>
 				</form>
             </field>
         </record>
@@ -28,7 +28,7 @@
                     <field name="name"/>
                 </tree>
             </field>
-        </record>        
+        </record>
 		<record id="product_brand_form_action" model="ir.actions.act_window">
             <field name="name">Product Brand</field>
             <field name="type">ir.actions.act_window</field>
@@ -54,18 +54,25 @@
             <field name="model">product.product</field>
             <field name="inherit_id" ref="product.product_normal_form_view"/>
             <field name="arch" type="xml">
-                <data>	
+                <data>
 	                <div name="buttons" position="after" version="7.0">
 	                	<group>
-		                	<group>				
-								<field name="model" /> 
-								<field name="full_name" /> 
+		                	<group>
+								<field name="model" />
+								<field name="full_name" />
 							</group>
-		                	<group>				
-								<field name="brand_id" /> 
+		                	<group>
+								<field name="brand_id" />
 							</group>
-						</group>			
+						</group>
 					</div>
+                    <div name="ean" position="after" version="7.0">
+                        <field name="tariff_description" />
+                        <field name="duty_tax_rate" />
+                    </div>
+                    <label for="ean13" position="attributes" version="7.0">
+                        <attribute name="string">Harmonize Code</attribute>
+                    </label>
 				</data>
 			</field>
         </record>
@@ -83,8 +90,8 @@
 	        	</xpath>
             </field>
         </record>
-        
-        
+
+
         <record id="product_search_form_view_tt" model="ir.ui.view">
             <field name="name">product.search.purchase.form</field>
             <field name="model">product.product</field>
@@ -93,7 +100,7 @@
                 <xpath expr="/search/field[@name='name']" position="attributes" >
                      <attribute name="filter_domain"> ['|',('full_name','ilike',self),('description','ilike',self)] </attribute>
                 </xpath>
-                 
+
             </field>
         </record>
 	</data>

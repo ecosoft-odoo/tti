@@ -25,13 +25,13 @@ from osv import osv, fields
 from tools.translate import _
 
 class product_template(osv.osv):
-    
+
     _inherit = "product.template"
     _columns = {
         # Do not translate
         'name': fields.char('Name', size=128, required=True, translate=False, select=True),
     }
-    
+
 product_template()
 
 class product_category(osv.osv):
@@ -41,13 +41,13 @@ class product_category(osv.osv):
         # Do not translate
         'name': fields.char('Name', size=64, required=True, translate=False, select=True),
     }
-    
+
 product_category()
 
 class product_product(osv.osv):
 
     _inherit = "product.product"
- 
+
     def name_search(self, cr, user, name='', args=None, operator='ilike', context=None, limit=100):
         if not args:
             args = []
@@ -89,7 +89,7 @@ class product_product(osv.osv):
             ids = self.search(cr, user, args, limit=limit, context=context)
         result = self.name_get(cr, user, ids, context=context)
         return result
-     
+
     # Overwrite Method
     def name_get(self, cr, user, ids, context=None):
         if context is None:
@@ -136,13 +136,13 @@ class product_product(osv.osv):
                           'variants': product.variants,
                           # kittiu
                           'attributes': (product.brand_id and product.brand_id.name and ' ' + product.brand_id.name or '') + (product.model and ' ' + product.model or '')
-                                        
+
                           # -- kittiu
                           }
                 result.append(_name_get(mydict))
-                
+
         return result
-    
+
 
     def _get_full_name(self, cr, uid, ids, name, args, context=None):
         names = self.name_get(cr, uid, ids, context)
@@ -150,20 +150,22 @@ class product_product(osv.osv):
         for name in names:
             res[name[0]] = name[1]
         return res
-    
+
     _columns = {
         'brand_id': fields.many2one('product.brand', 'Brand'),
         'model': fields.char('Model'),
         'full_name': fields.function(_get_full_name, type='char', size=256, string="Full Name",
                 store={
                        'product.product': (lambda self, cr, uid, ids, c={}: ids, ['default_code','name', 'brand_id','model'], 20)
-                    })
-    
+                    }),
+        'tariff_description': fields.char('Tariff Description'),
+        'duty_tax_rate': fields.char('Duty Tax Rate (%)'),
+
     }
     _defaults = {
         'type': 'product',
     }
-    
+
 product_product()
 
 class product_brand(osv.osv):
