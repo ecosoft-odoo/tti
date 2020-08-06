@@ -159,7 +159,8 @@ class product_product(osv.osv):
                        'product.product': (lambda self, cr, uid, ids, c={}: ids, ['default_code','name', 'brand_id','model'], 20)
                     }),
         'tariff_description': fields.char('Tariff Description'),
-        'duty_tax_rate': fields.char('Duty Tax Rate (%)'),
+        'duty_tax_rate': fields.float('Duty Tax Rate (%)'),
+        'harmonize_code': fields.char('Harmonize Code'),
 
     }
     _defaults = {

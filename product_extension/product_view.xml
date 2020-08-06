@@ -67,12 +67,10 @@
 						</group>
 					</div>
                     <div name="ean" position="after" version="7.0">
+                        <field name="harmonize_code" />
                         <field name="tariff_description" />
                         <field name="duty_tax_rate" />
                     </div>
-                    <label for="ean13" position="attributes" version="7.0">
-                        <attribute name="string">Harmonize Code</attribute>
-                    </label>
 				</data>
 			</field>
         </record>
