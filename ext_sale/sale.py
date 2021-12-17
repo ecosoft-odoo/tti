@@ -24,17 +24,44 @@ from openerp.tools.translate import _
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from openerp import tools
+import math
 
 
 class sale_order(osv.osv):
 
     _inherit = "sale.order"
+
+    def _get_quarter_date_order(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for order in self.browse(cr, uid, ids, context=context):
+            str_quarter = False
+            if order.date_order:
+                str_quarter = "Quarter %s" % (
+                    math.ceil(float(int(order.date_order)) / 3)
+                )
+            res[order.id] = str_quarter
+        return res
+
+    def _get_year_date_order(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for order in self.browse(cr, uid, ids, context=context):
+            res[order.id] = order.date_order and order.date_order.split('-')[0] or False
+        return res
+
     _columns = {
         'ref_attention_name': fields.char('Attention', size=128, readonly=False),
         'old_quote_number': fields.char('Old Job Number', size=64,),
         'ref_contact2_id': fields.many2one('res.partner', 'Contact 2', domain="[('parent_id','=', partner_id)]", readonly=False),
         'partner_shipping_id': fields.many2one('res.partner', 'Delivery Address', readonly=False, required=True, states={'done': [('readonly', True)]}, help="Delivery address for current sales order."),
         'pricelist_id': fields.many2one('product.pricelist', 'Pricelist', change_default=True, required=True, readonly=True, states={'draft': [('readonly', False)], 'sent': [('readonly', False)]}, help="Pricelist for current sales order."),
+        'quarter_date_order': fields.function(_get_quarter_date_order, type='char', string='Order Date - Quarter',
+            store={
+                'sale.order': (lambda self, cr, uid, ids, c={}: ids, [], 4),
+                }),        
+        'year_date_order': fields.function(_get_year_date_order, type='char', string='Order Date - Year',
+            store={
+                'sale.order': (lambda self, cr, uid, ids, c={}: ids, [], 4),
+                }),
     }
 
     _defaults = {

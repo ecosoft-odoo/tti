@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data>
+        <record id="view_account_move_filter" model="ir.ui.view">
+            <field name="name">account.move.select</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_account_move_filter"/>
+            <field name="arch" type="xml">
+                <data>
+					<filter string="Date" position="attributes">
+						<attribute name="string">Month</attribute>
+					</filter>
+					<filter string="Date" position="after">
+						<filter string="Year" icon="terp-go-year" domain="[]" context="{'group_by':'year_date'}"/>
+					</filter>
+                </data>
+            </field>
+        </record>
+    </data>
+</openerp>

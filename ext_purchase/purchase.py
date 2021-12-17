@@ -22,14 +22,41 @@
 import netsvc
 from osv import osv, fields
 from openerp.tools.translate import _
+import math
 
 
 class purchase_order(osv.osv):
 
     _inherit = "purchase.order"
+
+    def _get_quarter_date_order(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for order in self.browse(cr, uid, ids, context=context):
+            str_quarter = False
+            if order.date_order:
+                str_quarter = "Quarter %s" % (
+                    math.ceil(float(int(order.date_order)) / 3)
+                )
+            res[order.id] = str_quarter
+        return res
+
+    def _get_year_date_order(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for order in self.browse(cr, uid, ids, context=context):
+            res[order.id] = order.date_order and order.date_order.split('-')[0] or False
+        return res
+
     _columns = {
         'overwrite_shipto': fields.text('Overwrite Ship-To'),
         'pricelist_id': fields.many2one('product.pricelist', 'Pricelist', change_default=True, required=True, states={'confirmed': [('readonly', True)], 'approved': [('readonly', True)], 'done': [('readonly', True)]}, help="The pricelist sets the currency used for this purchase order. It also computes the supplier price for the selected products/quantities."),
+        'quarter_date_order': fields.function(_get_quarter_date_order, type='char', string='Order Date - Quarter',
+            store={
+                'purchase.order': (lambda self, cr, uid, ids, c={}: ids, [], 4),
+                }),        
+        'year_date_order': fields.function(_get_year_date_order, type='char', string='Order Date - Year',
+            store={
+                'purchase.order': (lambda self, cr, uid, ids, c={}: ids, [], 4),
+                }),
     }
 
     def create(self, cr, uid, data, context=None):

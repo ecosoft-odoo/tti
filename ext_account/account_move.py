@@ -19,39 +19,25 @@
 #
 ##############################################################################
 
-{
-    'name': 'Extension of Accounting',
-    'version': '1.0',
-    'author': 'Ecosoft',
-    'summary': 'Miscellenous Extension to Accounting',
-    'description': """
+from openerp.osv import osv, fields
 
-This module includes:
 
-* Set Invisible for buttons for non-accounting people in Invoice
+class account_move(osv.osv):
 
-    """,
-    'category': 'Accounting & Finance',
-    'sequence': 4,
-    'website': 'http://www.ecosoft.co.th',
-    'images': [],
-    'depends': ['account',
-                'account_invoice_merge',
-                'job_cost_sheet',
-                'sale_prequotation',
-                'currency_rate_enhanced'],
-    'demo': [],
-    'data': [
-        'account_invoice_view.xml',
-        'account_move_view.xml',
-        'account_sequence.xml',
-        'report/account_invoice_report_view.xml'
-    ],
-    'test': [
-    ],
-    'auto_install': False,
-    'application': True,
-    'installable': True,
-}
+    _inherit = 'account.move'
 
+    def _get_year_date(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for move in self.browse(cr, uid, ids, context=context):
+            res[move.id] = move.date and move.date.split('-')[0] or False
+        return res
+
+    _columns = {
+        'year_date': fields.function(_get_year_date, type='char', string='Year',
+            store={
+                'account.move': (lambda self, cr, uid, ids, c={}: ids, [], 4),
+                }), 
+    }
+
+account_move()
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
