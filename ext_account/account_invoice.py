@@ -27,6 +27,12 @@ class account_invoice(osv.osv):
 
     _inherit = 'account.invoice'
     
+    def _get_year_date_invoice(self, cr, uid, ids, name, args, context=None):
+        res = {}
+        for inv in self.browse(cr, uid, ids, context=context):
+            res[inv.id] = inv.date_invoice and inv.date_invoice.split('-')[0] or False
+        return res
+
     _columns = {
         'pq_type': fields.related('sale_order_ids', 'pq_type', type='selection', string='PQ Type', readonly=True,
                                  selection=[
@@ -37,6 +43,10 @@ class account_invoice(osv.osv):
                                     ('rent', 'Rent'),], store=True),
         'overwrite_shipto': fields.text('Overwrite Ship-To'),
         'proforma_number': fields.char('Proforma #', size=32, readonly=True),
+        'year_date_invoice': fields.function(_get_year_date_invoice, type='char', string='Invoice Date - Year',
+            store={
+                'account.invoice': (lambda self, cr, uid, ids, c={}: ids, [], 4),
+                }),
     }
 
     def merge_invoice(self, cr, uid, invoices, context=None):
