@@ -5,6 +5,7 @@
         <record id="view_account_move_filter" model="ir.ui.view">
             <field name="name">account.move.select</field>
             <field name="model">account.move</field>
+            <field name="type">form</field>
             <field name="inherit_id" ref="account.view_account_move_filter"/>
             <field name="arch" type="xml">
                 <data>
