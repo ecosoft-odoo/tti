@@ -37,7 +37,7 @@ class sale_order(osv.osv):
             str_quarter = False
             if order.date_order:
                 str_quarter = "Quarter %s" % (
-                    math.ceil(float(int(order.date_order.split('-')[1])) / 3)
+                    int(math.ceil(float(int(order.date_order.split('-')[1])) / 3))
                 )
             res[order.id] = str_quarter
         return res
