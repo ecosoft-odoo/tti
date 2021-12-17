@@ -55,12 +55,12 @@
                 	<filter string="Supplier" position="before" >
                         <filter string="Pricelist" domain="[]" context="{'group_by':'pricelist_id'}"/>
                 	</filter>
-					<filter string="Order Date" position="attributes">
-						<attribute name="string">Order Date - Month</attribute>
-					</filter>
 					<filter string="Order Date" position="after">
 						<filter string="Order Date - Quarter" icon="terp-go-month" domain="[]" context="{'group_by':'quarter_date_order'}"/>
 						<filter string="Order Date - Year" icon="terp-go-year" domain="[]" context="{'group_by':'year_date_order'}"/>
+					</filter>
+					<filter string="Order Date" position="attributes">
+						<attribute name="string">Order Date - Month</attribute>
 					</filter>
 				</data> 
             </field>

@@ -44,11 +44,11 @@
                 	<filter string="Partner" position="before" >
                         <filter string="PQ Type" domain="[]" context="{'group_by':'pq_type'}"/>
                 	</filter>
-					<filter string="Invoice Date" position="attributes">
-						<attribute name="string">Invoice Date - Month</attribute>
-					</filter>
 					<filter string="Invoice Date" position="after">
 						<filter string="Invoice Date - Year" icon="terp-go-year" domain="[]" context="{'group_by':'year_date_invoice'}"/>
+					</filter>
+					<filter string="Invoice Date" position="attributes">
+						<attribute name="string">Invoice Date - Month</attribute>
 					</filter>
 				</data> 
             </field>
