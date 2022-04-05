@@ -37,6 +37,7 @@ Features
     'depends' : ['base'],
     'demo' : [],
     'data' : [
+        'res_partner_view.xml',
     ],
     'test' : [
     ],

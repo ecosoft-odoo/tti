@@ -62,6 +62,8 @@ class sale_order(osv.osv):
             store={
                 'sale.order': (lambda self, cr, uid, ids, c={}: ids, [], 4),
                 }),
+        'is_closed': fields.boolean(string='Closed'),
+        'date_closing': fields.date(string='Closing Date'),
     }
 
     _defaults = {
@@ -94,6 +96,9 @@ class sale_order(osv.osv):
     def copy(self, cr, uid, id, default=None, context=None):
         raise osv.except_osv(_('Error!'),
                             _('Duplication of Quotation/Sales Order is not allowed, please use Calculation Sheet!'))
+
+    def onchange_is_closed(self, cr, uid, ids, context=None):
+        return {'value': {'date_closing': False}}
 
 sale_order()
 
