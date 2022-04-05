@@ -63,6 +63,22 @@
 			</field>
         </record>
 
+		<record id="view_order_form_ext2" model="ir.ui.view">
+			<field name="name">view.order.form.ext</field>
+			<field name="model">sale.order</field>
+			<field name="inherit_id" ref="sale_prequotation.view_order_form_ext"/>
+			<field name="arch" type="xml">
+				<field name="not_used" position="after">
+					<br/>
+					<label string="Closed"/>
+					<field name="is_closed" on_change="onchange_is_closed()"/>
+					<br/>
+					<label string="Closing Date: " attrs="{'invisible': [('is_closed', '=', False)]}" style="font-size: initial;"/>
+					<field name="date_closing" attrs="{'invisible': [('is_closed', '=', False)], 'required': [('is_closed', '=', True)]}" style="display: inline;font-size: initial;vertical-align: initial;font-weight: initial;"/>
+				</field>
+			</field>
+		</record>
+
 
         <record id="view_order_form_inherit_ext" model="ir.ui.view">
             <field name="name">view.order.form.inherit.ext</field>
@@ -118,6 +134,11 @@
 					<filter string="Order Date" position="attributes">
 						<attribute name="string">Order Date - Month</attribute>
 					</filter>
+					<field name="project_id" position="after">
+						<separator/>
+						<filter name="open_quotation" string="Open Quotation" domain="[('is_closed', '=', False)]"/>
+						<filter name="closed_quotation" string="Closed Quotation" domain="[('is_closed', '=', True)]"/>
+					</field>
 				        </data>
             </field>
        </record>

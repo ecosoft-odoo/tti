@@ -19,6 +19,16 @@
 #
 ##############################################################################
 
-import res_currency
-import res_partner
+from osv import osv, fields
+
+
+class res_partner(osv.osv):
+    _inherit = 'res.partner'
+
+    _columns = {
+        'customer_type': fields.selection([('client', 'Client'), ('user', 'User')], string='Customer Type'),
+        'date_create': fields.date(string='Create Date'),
+    }
+
+res_partner()
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
