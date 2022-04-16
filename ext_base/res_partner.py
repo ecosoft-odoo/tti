@@ -27,7 +27,7 @@ class res_partner(osv.osv):
 
     _columns = {
         'customer_type': fields.selection([('client', 'Client'), ('user', 'User')], string='Customer Type'),
-        'date_create': fields.date(string='Create Date'),
+        'create_date': fields.datetime('Create Date', readonly=True),
     }
 
 res_partner()
