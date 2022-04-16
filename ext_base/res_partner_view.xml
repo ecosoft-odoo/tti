@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <label for="type" position="before">
                     <field name="customer_type"/>
-                    <field name="date_create"/>
+                    <field name="create_date" attrs="{'invisible': [('create_date', '=', False)]}"/>
                 </label>
             </field>
         </record>
