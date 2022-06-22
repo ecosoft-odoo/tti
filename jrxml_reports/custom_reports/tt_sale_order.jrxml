@@ -789,7 +789,7 @@ $F{product_uom}]]></textFieldExpression>
 			</textField>
 			<image>
 				<reportElement x="0" y="216" width="554" height="39"/>
-				<imageExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR}+"so_footer.png"]]></imageExpression>
+				<imageExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR}+"so_footer.jpg"]]></imageExpression>
 			</image>
 			<rectangle radius="10">
 				<reportElement x="0" y="144" width="181" height="71"/>
@@ -940,7 +940,7 @@ $F{product_uom}]]></textFieldExpression>
 			</staticText>
 			<image>
 				<reportElement x="0" y="216" width="554" height="39"/>
-				<imageExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR}+"so_footer.png"]]></imageExpression>
+				<imageExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR}+"so_footer.jpg"]]></imageExpression>
 			</image>
 			<rectangle radius="10">
 				<reportElement x="374" y="144" width="181" height="71"/>
