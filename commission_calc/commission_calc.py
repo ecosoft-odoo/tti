@@ -175,16 +175,16 @@ class commission_worksheet(osv.osv):
         'name': '/'
     }
 
-    _sql_constraints = [
-        ('sale_team_id', 'period_id', 'Duplicate Sale Team / Period')
-    ]
+    # _sql_constraints = [
+    #     ('sale_team_id', 'period_id', 'Duplicate Sale Team / Period')
+    # ]
 
     def create(self, cr, uid, vals, context=None):
-        if vals.get('period_id', False) and vals.get('sale_team_id', False):
-            rec = self.search(cr, uid, [('period_id', '=', vals.get('period_id')), ('sale_team_id', '=', vals.get('sale_team_id'))], context=context)
-            if rec:
-                raise osv.except_osv(_('Warning!'),
-                                 _('You can not create duplicate Commission WorkSheet'))
+        # if vals.get('period_id', False) and vals.get('sale_team_id', False):
+        #     rec = self.search(cr, uid, [('period_id', '=', vals.get('period_id')), ('sale_team_id', '=', vals.get('sale_team_id'))], context=context)
+        #     if rec:
+        #         raise osv.except_osv(_('Warning!'),
+        #                          _('You can not create duplicate Commission WorkSheet'))
         if vals.get('name', '/') == '/':
             vals['name'] = self.pool.get('ir.sequence').get(cr, uid, 'commission.worksheet') or '/'
         return super(commission_worksheet, self).create(cr, uid, vals, context=context)
@@ -340,6 +340,14 @@ class commission_worksheet(osv.osv):
                                 and date_order >= %s and date_order <= %s \
                                 and t.sale_team_id = %s and (o.not_used is null or o.not_used = false) order by o.id", (date_start, date_stop, sale_team_id))
             order_ids = map(lambda x: x[0], cr.fetchall())
+
+            # Remove duplicate 'order_ids' from other commission worksheet in the same team and period
+            match_worksheet_line_ids = worksheet_line_obj.search(cr, uid,
+                [('commission_worksheet_id.sale_team_id', '=', worksheet.sale_team_id.id), ('commission_worksheet_id.period_id', '=', worksheet.period_id.id), ('commission_worksheet_id', '!=', worksheet.id)])
+            match_worksheet_lines = worksheet_line_obj.browse(cr, uid, match_worksheet_line_ids)
+            match_order_ids = [mwl.order_id.id for mwl in match_worksheet_lines]
+            order_ids = [order_id for order_id in order_ids if order_id not in match_order_ids]
+
             # Create lines from Order
             orders = order_obj.browse(cr, uid, order_ids)
             accumulated_amt = 0.0
