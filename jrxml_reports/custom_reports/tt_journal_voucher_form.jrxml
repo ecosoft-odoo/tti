@@ -86,7 +86,7 @@
 		</groupFooter>
 	</group>
 	<background>
-		<band height="689" splitType="Stretch">
+		<band height="842" splitType="Stretch">
 			<frame>
 				<reportElement style="table" x="0" y="176" width="180" height="521"/>
 			</frame>
