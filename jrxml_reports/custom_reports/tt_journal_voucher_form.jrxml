@@ -79,14 +79,14 @@
 	<variable name="credit" class="java.lang.Number" calculation="Sum">
 		<variableExpression><![CDATA[$F{credit}]]></variableExpression>
 	</variable>
-	<group name="ID Group" footerPosition="ForceAtBottom">
+	<group name="ID Group">
 		<groupExpression><![CDATA[$F{id}]]></groupExpression>
 		<groupFooter>
-			<band height="35">
+			<band height="20">
 				<line>
 					<reportElement x="0" y="0" width="555" height="0"/>
 					<graphicElement>
-						<pen lineWidth="0.5" lineColor="#000000"/>
+						<pen lineWidth="1.0" lineColor="#000000"/>
 					</graphicElement>
 				</line>
 				<rectangle>
@@ -109,93 +109,6 @@
 					</textElement>
 					<textFieldExpression class="java.lang.Number"><![CDATA[$V{credit}]]></textFieldExpression>
 				</textField>
-			</band>
-			<band height="83">
-				<rectangle radius="10">
-					<reportElement x="419" y="5" width="133" height="72"/>
-				</rectangle>
-				<rectangle radius="10">
-					<reportElement x="216" y="5" width="133" height="72"/>
-				</rectangle>
-				<line>
-					<reportElement x="223" y="41" width="117" height="1"/>
-					<graphicElement>
-						<pen lineStyle="Dotted"/>
-					</graphicElement>
-				</line>
-				<rectangle radius="10">
-					<reportElement x="0" y="5" width="133" height="72"/>
-				</rectangle>
-				<staticText>
-					<reportElement mode="Transparent" x="419" y="58" width="133" height="17" backcolor="#B5E7D3"/>
-					<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
-						<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
-					</textElement>
-					<text><![CDATA[......./......./.......]]></text>
-				</staticText>
-				<staticText>
-					<reportElement mode="Transparent" x="0" y="58" width="133" height="17" backcolor="#B5E7D3"/>
-					<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
-						<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
-					</textElement>
-					<text><![CDATA[......./......./.......]]></text>
-				</staticText>
-				<line>
-					<reportElement x="426" y="41" width="117" height="1"/>
-					<graphicElement>
-						<pen lineStyle="Dotted"/>
-					</graphicElement>
-				</line>
-				<line>
-					<reportElement x="419" y="21" width="133" height="1"/>
-				</line>
-				<line>
-					<reportElement x="0" y="21" width="133" height="1"/>
-				</line>
-				<staticText>
-					<reportElement mode="Transparent" x="216" y="7" width="133" height="17" backcolor="#B5E7D3"/>
-					<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
-						<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
-					</textElement>
-					<text><![CDATA[Received By]]></text>
-				</staticText>
-				<staticText>
-					<reportElement mode="Transparent" x="215" y="33" width="133" height="17" backcolor="#B5E7D3"/>
-					<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
-						<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
-					</textElement>
-					<text><![CDATA[]]></text>
-				</staticText>
-				<staticText>
-					<reportElement mode="Transparent" x="419" y="7" width="133" height="17" backcolor="#B5E7D3"/>
-					<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
-						<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
-					</textElement>
-					<text><![CDATA[Approved By]]></text>
-				</staticText>
-				<staticText>
-					<reportElement mode="Transparent" x="0" y="7" width="133" height="17" backcolor="#B5E7D3"/>
-					<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
-						<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
-					</textElement>
-					<text><![CDATA[Prepared By]]></text>
-				</staticText>
-				<line>
-					<reportElement x="7" y="41" width="117" height="1"/>
-					<graphicElement>
-						<pen lineStyle="Dotted"/>
-					</graphicElement>
-				</line>
-				<staticText>
-					<reportElement mode="Transparent" x="217" y="58" width="133" height="17" backcolor="#B5E7D3"/>
-					<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
-						<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
-					</textElement>
-					<text><![CDATA[......./......./.......]]></text>
-				</staticText>
-				<line>
-					<reportElement x="217" y="21" width="132" height="1"/>
-				</line>
 			</band>
 		</groupFooter>
 	</group>
@@ -289,31 +202,28 @@
 	<columnHeader>
 		<band height="22" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Transparent" x="0" y="3" width="180" height="14" backcolor="#B5E7D3"/>
+				<reportElement style="table_TH" mode="Transparent" x="0" y="0" width="180" height="22" backcolor="#B5E7D3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Monospaced" size="9" isBold="true" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 				</textElement>
 				<text><![CDATA[Description]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="180" y="3" width="200" height="14" backcolor="#B5E7D3"/>
+				<reportElement style="table_TH" mode="Transparent" x="180" y="0" width="200" height="22" backcolor="#B5E7D3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Monospaced" size="9" isBold="true" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 				</textElement>
 				<text><![CDATA[Account]]></text>
 			</staticText>
-			<line>
-				<reportElement x="0" y="21" width="555" height="1"/>
-			</line>
 			<staticText>
-				<reportElement mode="Transparent" x="380" y="3" width="88" height="14" backcolor="#B5E7D3"/>
+				<reportElement style="table_TH" mode="Transparent" x="380" y="0" width="88" height="22" backcolor="#B5E7D3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Monospaced" size="9" isBold="true" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 				</textElement>
 				<text><![CDATA[Debit]]></text>
 			</staticText>
 			<staticText>
-				<reportElement mode="Transparent" x="468" y="3" width="87" height="14" backcolor="#B5E7D3"/>
+				<reportElement style="table_TH" mode="Transparent" x="468" y="0" width="87" height="22" backcolor="#B5E7D3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
 					<font fontName="Monospaced" size="9" isBold="true" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 				</textElement>
@@ -326,7 +236,7 @@
 			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="0" width="180" height="21" forecolor="#000000" backcolor="#FFFFFF"/>
 				<box topPadding="4" leftPadding="2" bottomPadding="2" rightPadding="2">
-					<leftPen lineWidth="0.5" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineColor="#000000"/>
 				</box>
 				<textElement verticalAlignment="Top" rotation="None" lineSpacing="Single" markup="none">
 					<font fontName="Monospaced" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
@@ -354,7 +264,7 @@
 			<textField pattern="#,##0.00" isBlankWhenNull="true">
 				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="468" y="0" width="87" height="21" forecolor="#000000" backcolor="#FFFFFF"/>
 				<box topPadding="4" leftPadding="3" bottomPadding="2" rightPadding="2">
-					<rightPen lineWidth="0.5" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single" markup="none">
 					<font fontName="Monospaced" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
@@ -364,23 +274,112 @@
 			<line>
 				<reportElement stretchType="RelativeToBandHeight" x="180" y="0" width="0" height="21"/>
 				<graphicElement>
-					<pen lineWidth="0.5" lineColor="#000000"/>
+					<pen lineWidth="1.0" lineColor="#000000"/>
 				</graphicElement>
 			</line>
 			<line>
 				<reportElement stretchType="RelativeToBandHeight" x="380" y="0" width="0" height="21"/>
 				<graphicElement>
-					<pen lineWidth="0.5" lineColor="#000000"/>
+					<pen lineWidth="1.0" lineColor="#000000"/>
 				</graphicElement>
 			</line>
 			<line>
 				<reportElement stretchType="RelativeToBandHeight" x="468" y="0" width="0" height="21"/>
 				<graphicElement>
-					<pen lineWidth="0.5" lineColor="#000000"/>
+					<pen lineWidth="1.0" lineColor="#000000"/>
 				</graphicElement>
 			</line>
 		</band>
 	</detail>
+	<lastPageFooter>
+		<band height="83">
+			<rectangle radius="10">
+				<reportElement x="419" y="5" width="133" height="72"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="216" y="5" width="133" height="72"/>
+			</rectangle>
+			<line>
+				<reportElement x="223" y="41" width="117" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<rectangle radius="10">
+				<reportElement x="0" y="5" width="133" height="72"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="419" y="58" width="133" height="17" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[......./......./.......]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="58" width="133" height="17" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[......./......./.......]]></text>
+			</staticText>
+			<line>
+				<reportElement x="426" y="41" width="117" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="419" y="21" width="133" height="1"/>
+			</line>
+			<line>
+				<reportElement x="0" y="21" width="133" height="1"/>
+			</line>
+			<staticText>
+				<reportElement mode="Transparent" x="216" y="7" width="133" height="17" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[Received By]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="215" y="33" width="133" height="17" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="419" y="7" width="133" height="17" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[Approved By]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="7" width="133" height="17" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[Prepared By]]></text>
+			</staticText>
+			<line>
+				<reportElement x="7" y="41" width="117" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement mode="Transparent" x="217" y="58" width="133" height="17" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="9" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[......./......./.......]]></text>
+			</staticText>
+			<line>
+				<reportElement x="217" y="21" width="132" height="1"/>
+			</line>
+		</band>
+	</lastPageFooter>
 	<pageFooter>
 		<band height="28">
 			<textField evaluationTime="Report">
