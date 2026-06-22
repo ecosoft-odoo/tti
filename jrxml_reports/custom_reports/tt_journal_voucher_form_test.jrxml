@@ -194,7 +194,7 @@
 		</groupFooter>
 	</group>
 	<background>
-		<band height="689" splitType="Stretch">
+		<band height="691" splitType="Stretch">
 			<frame>
 				<reportElement style="table" x="0" y="154" width="140" height="537"/>
 			</frame>
