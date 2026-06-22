@@ -101,6 +101,20 @@
         <field name="jasper_output">pdf</field>
     </record>
 
+    <report string="Journal Voucher (TEST)"
+        model="account.move"
+        auto="True"
+        name="tt.account.move.form.test"
+        rml="jrxml_reports/custom_reports/tt_journal_voucher_form_test.jrxml"
+        id="tt_journal_voucher_form_test"
+        menu="True"
+        header="False"
+    />
+    <record id="tt_journal_voucher_form_test" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+
     <report string="Billing (TT)"
         model="account.billing"
         auto="True"
