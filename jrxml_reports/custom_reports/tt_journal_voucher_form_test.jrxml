@@ -79,7 +79,7 @@
 	<variable name="credit" class="java.lang.Number" calculation="Sum">
 		<variableExpression><![CDATA[$F{credit}]]></variableExpression>
 	</variable>
-	<group name="ID Group">
+	<group name="ID Group" footerPosition="ForceAtBottom">
 		<groupExpression><![CDATA[$F{id}]]></groupExpression>
 		<groupFooter>
 			<band height="21">
@@ -196,16 +196,16 @@
 	<background>
 		<band height="689" splitType="Stretch">
 			<frame>
-				<reportElement style="table" x="0" y="154" width="140" height="522"/>
+				<reportElement style="table" x="0" y="154" width="140" height="537"/>
 			</frame>
 			<frame>
-				<reportElement style="table" x="140" y="154" width="209" height="522"/>
+				<reportElement style="table" x="140" y="154" width="209" height="537"/>
 			</frame>
 			<frame>
-				<reportElement style="table" x="349" y="154" width="103" height="522"/>
+				<reportElement style="table" x="349" y="154" width="103" height="537"/>
 			</frame>
 			<frame>
-				<reportElement style="table" x="452" y="154" width="103" height="522"/>
+				<reportElement style="table" x="452" y="154" width="103" height="537"/>
 			</frame>
 		</band>
 	</background>
