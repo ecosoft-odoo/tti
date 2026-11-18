@@ -210,18 +210,6 @@
 
 
     <!--Hide Standard Report-->
-    <report
-            auto="False"
-            id="account.account_invoices"
-            model="account.invoice"
-            name="account.invoice"
-            rml="account/report/account_print_invoice.rml"
-            string="Invoices"
-            attachment="(object.state in ('open','paid')) and ('INV'+(object.number or '').replace('/','')+'.pdf')"
-            attachment_use="True"
-            usage="default"
-            groups='base.group_system'
-            />
 
     <report id="purchase.report_purchase_order"
             name="purchase.order"
