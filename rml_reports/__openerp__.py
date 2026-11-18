@@ -28,11 +28,12 @@
 Features:
 
 * Request for Quotation -> Thai comptible font
+* Invoices -> line no., Invoice To / Ship To (from SO), header on every page
     """,
     'author': 'kittiu',
     'website': 'http://www.ecosoft.co.th',
     'images': [],
-    'depends': ['purchase'],
+    'depends': ['purchase', 'account', 'sale'],
     'data': [
         'report.xml',
     ],
